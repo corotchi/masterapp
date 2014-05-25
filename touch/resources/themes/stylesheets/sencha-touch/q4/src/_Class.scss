@@ -1,0 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+html, body {
+    /*font-family: $font-family;*/
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+}
+
+.x-ios.x-tablet .x-landscape * {
+	-webkit-text-stroke: 1px transparent;
+}
+
+body {
+	font-size: 104%;
+}
+
+body.x-android.x-phone {
+	font-size: 116%;
+}
+
+body.x-ios.x-phone {
+	font-size: 114%;
+}
+
+body.x-desktop {
+	font-size: 114%;
+}
+
+.x-layout-card-item {
+	background: $page-bg-color;
+}

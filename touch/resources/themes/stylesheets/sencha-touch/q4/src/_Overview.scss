@@ -1,0 +1,53 @@
+.CompanyOverview {
+  padding: 40px;
+
+  .companyName {
+    padding-bottom: 50px;
+
+    h2 {
+      font-size: 20px;
+      text-transform: uppercase;
+
+      span {
+        color: #76bfb9;
+        padding-right: 10px;
+      }
+    }
+  }
+
+
+  .stockQuote {
+    float: left;
+    padding-right: 50px;
+
+    h3 {
+      font-weight: 200;
+      font-size: 90px;
+      line-height: 110px;
+
+      span {
+        font-size: 35px;
+        vertical-align: top;
+        line-height: 70px;
+      }
+    }
+
+    h4 {
+      font-size: 14px;
+      color: #76bfb9;
+      text-transform: uppercase;
+
+      span {
+        color: #fff;
+        padding-left: 10px;
+      }
+    }
+  }
+
+
+
+  #overviewChart {
+    float: right;
+  }
+
+}

@@ -1,0 +1,22 @@
+.x-toolbar.x-docked-left.mainToolbar {
+  background-color: #1b1f24;
+  background-image: url("../images/bg/left-bg.jpg");
+  background-size: 100% 100%;
+  border-right: none;
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .x-button {
+    padding: 20px 15px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0;
+    margin: 0;
+    color: #fff;
+  }
+
+}

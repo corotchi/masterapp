@@ -1,0 +1,41 @@
+.homeList {
+
+  .x-dataview-item {
+    width: 20%;
+    height: 170px;
+    float: left;
+    overflow: hidden;
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+    border-right: 1px solid rgba(255, 255, 255, 0.09);
+    padding: 20px;
+  }
+  
+  h3 {
+    display: none;
+  }
+  
+  span {
+    display: block;
+    line-height: 135px;
+  }
+
+  img {
+    max-width: 135px;
+    max-height: 60px;
+  }
+
+}
+
+.x-portrait {
+
+  .homeList {
+
+    .x-dataview-item {
+      width: 25%;
+    }
+  }
+
+}
