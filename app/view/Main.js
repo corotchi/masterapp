@@ -1,7 +1,7 @@
 Ext.define('Q4App.view.Main', {
     extend: 'Ext.Panel',
     xtype: 'main',
-    requires: [],
+    requires: ['Ext.field.Search'],
     config: {
         layout: 'card',
         items: [
@@ -10,16 +10,22 @@ Ext.define('Q4App.view.Main', {
                 xtype: 'navigation'
             },
             {
-                top: 10,
-                left: 10,
-                width: 200,
-                height: 20,
-                xtype: 'searchfield',
-                label: 'Query',
-                name: 'query'
+                xtype: 'panel',
+                cls: 'searchPanel',
+                hideOnMaskTap: true,
+                modal: true,
+                hidden: true,
+                top: 0,
+                items: [
+                    {
+                        xtype: 'searchfield',
+                        name: 'query'
+                    }
+                ]
+
             },
-            {xtype: 'home'},
-            {xtype: 'overview'}
+            {xtype: 'home'}
+//            {xtype: 'overview'}
         ]
     }
 });

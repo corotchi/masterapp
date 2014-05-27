@@ -11,6 +11,9 @@ Ext.define('Q4App.model.Company', {
             "siteUrl",
             "title",
             "shortName",
+            "stock",
+            "exchange",
+            "symbol",
             "desktopSiteURL",
             "_id"
         ]

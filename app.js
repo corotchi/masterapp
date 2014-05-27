@@ -26,12 +26,17 @@ Ext.application({
 
     stores: [
         'Company',
-        'PressRelease'
+        'Event',
+        'PressRelease',
+        'Stock',
+        'StockChart'
     ],
 
     models: [
         'Company',
-        'PressRelease'
+        'Event',
+        'PressRelease',
+        'Stock'
     ],
 
     controllers: [

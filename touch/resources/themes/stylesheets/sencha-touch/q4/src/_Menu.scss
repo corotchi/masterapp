@@ -10,13 +10,67 @@
   }
 
   .x-button {
-    padding: 20px 15px;
+    padding: 15px 15px;
     background: none;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 0;
     margin: 0;
     color: #fff;
+    height: 65px;
+
+    .x-button-icon {
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+
+      &.search {
+        background-image: theme_image('q4', "sortSearch.png");
+      }
+
+      &.sort{
+        background-image: theme_image('q4', "sortA.png");
+
+        &.sortDown {
+          background-image: theme_image('q4', "sortZ.png");
+        }
+      }
+
+      &.bookmark{
+        background-image: theme_image('q4', "sortBookmark.png");
+      }
+
+      &.back{
+        background-image: theme_image('q4', "back.png");
+      }
+
+      &:before {
+        display: none;
+      }
+    }
   }
 
+}
+
+.x-panel.x-floating.searchPanel {
+  $c: #2a3138;
+  margin-top: -71px;
+  margin-left: 60px;
+  height: 70px;
+  background-color: $c;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-left: none;
+
+  .x-panel-inner {
+    background-color: $c;
+  }
+
+  .x-field-input {
+    padding: 13px 10px;
+
+    .x-input-el {
+      margin: 0;
+      border: none;
+      padding: 3px;
+    }
+  }
 }

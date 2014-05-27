@@ -1,8 +1,9 @@
 .CompanyOverview {
-  padding: 40px;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
 
   .companyName {
-    padding-bottom: 50px;
+    padding:40px 40px 50px;
 
     h2 {
       font-size: 20px;
@@ -17,6 +18,8 @@
 
 
   .stockQuote {
+    padding-left: 40px;
+    height: 280px;
     float: left;
     padding-right: 50px;
 
@@ -39,7 +42,7 @@
 
       span {
         color: #fff;
-        padding-left: 10px;
+        padding:0 5px 0 10px;
       }
     }
   }
@@ -47,7 +50,174 @@
 
 
   #overviewChart {
-    float: right;
+    margin-left: 360px;
+    margin-right: 40px;
+//    opacity: 0;
+
+    &.active {
+      animation: fadein 2s;
+      -moz-animation: fadein 2s; /* Firefox */
+      -webkit-animation: fadein 2s;
+    }
+
+  }
+
+
+  .companyFeedContainer {
+    clear: both;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    padding: 30px;
+  }
+  .companyBox {
+    float: left;
+    width: 33%;
+    height: 170px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    .x-inner {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      height: 150px;
+      overflow: hidden;
+    }
+
+    h2 {
+      font-size: 13px;
+      color: #76bfb9;
+      padding-bottom: 10px;
+    }
+
   }
 
 }
+
+.x-portrait {
+
+  .CompanyOverview {
+
+    .stockQuote {
+        float: none;
+    }
+
+    #overviewChart {
+      float: none;
+      margin: 0 30px;
+      padding: 0;
+    }
+
+    .companyBox {
+      height: 220px;
+    }
+  }
+
+}
+
+
+
+@keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-o-keyframes fadein { /* Opera */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+.wrapper {
+  position: relative;
+  margin: 40px auto;
+  background: white;
+}
+
+@mixin timer($item, $duration, $size, $color, $border, $hover: running) {
+  #{$item}, #{$item} * { @include box-sizing(border-box); }
+
+  #{$item} {
+    width: $size;
+    height: $size;
+  }
+
+  #{$item} .pie {
+    width: 50%;
+    height: 100%;
+    transform-origin: 100% 50%;
+    position: absolute;
+    background: $color;
+    border: #{$border};
+  }
+
+  #{$item} .spinner {
+    border-radius: 100% 0 0 100% / 50% 0 0 50%;
+    z-index: 200;
+    border-right: none;
+    animation: rota $duration + s linear infinite;
+  }
+
+  #{$item}:hover .spinner,
+  #{$item}:hover .filler,
+  #{$item}:hover .mask {
+    animation-play-state: $hover;
+  }
+
+  #{$item} .filler {
+    border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+    left: 50%;
+    opacity: 0;
+    z-index: 100;
+    animation: opa $duration + s steps(1,end) infinite reverse;
+    border-left: none;
+  }
+
+  #{$item} .mask {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    opacity: 1;
+    z-index: 300;
+    animation: opa $duration + s steps(1,end) infinite;
+  }
+
+  @keyframes rota {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @keyframes opa {
+    0% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+  }
+}
+
+@include timer('.wrapper', 5, 250px, #08C, '5px solid rgba(0,0,0,0.5)');

@@ -10,8 +10,8 @@ Ext.define('Q4App.store.Company', {
         proxy: {
             type: "jsonp",
             url : "http://q4app.com/api/projects",
-            extraParam: {
-              'live': true
+            extraParams: {
+              live: true
             },
             reader: {
                 type: "json",

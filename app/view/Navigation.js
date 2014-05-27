@@ -1,7 +1,8 @@
 Ext.define('Q4App.view.Navigation', {
     extend: 'Ext.Toolbar',
+    requires: [
+    ],
     xtype: 'navigation',
-    requires: [],
     config: {
         cls: 'mainToolbar',
         width: 75,
@@ -10,15 +11,20 @@ Ext.define('Q4App.view.Navigation', {
                 html: '<img src="resources/images/q4-logo.png" alt="logo"  />'
             },
             {
+                iconCls: 'back',
+                hidden: true,
+                id: 'back'
+            },
+            {
                 iconCls: 'search',
                 id: 'search'
             },
             {
-                iconCls: 'arrow_up',
+                iconCls: 'sort',
                 id: 'sort'
             },
             {
-                iconCls: 'star',
+                iconCls: 'bookmark',
                 id: 'bookmark'
             },
             {
