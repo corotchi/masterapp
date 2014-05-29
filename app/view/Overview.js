@@ -5,10 +5,14 @@ Ext.define('Q4App.view.Overview', {
         cls: 'CompanyOverview',
         items: [
             {
+                id: 'companyTitle',
                 cls: 'companyName',
-                html: [
-                    '<h2><span>NYSE:</span>Company Name Inc.</h2>'
-                ].join('')
+                tpl:  new Ext.XTemplate(
+                    '<tpl for=".">',
+                        '<h2><span>{exchange}</span>{title}</h2>',
+                    '</tpl>'
+                ),
+                data: [{exchange :'NYSE', title: 'Company Name Inc.'}]
             },
             {
                 xtype: 'dataview',
@@ -40,10 +44,19 @@ Ext.define('Q4App.view.Overview', {
             },
             {
                 id: 'overviewChart',
-                html: '<div class="wrapper">' +
-                        '<div class="pie spinner"></div>' +
-                        '<div class="pie filler"></div>' +
-                        '<div class="mask"></div>' +
+                html:
+                    '<div class="loaderContainer">' +
+                        '<div class="loader">' +
+                            '<span class="loader-block"></span>' +
+                            '<span class="loader-block"></span>' +
+                            '<span class="loader-block"></span>' +
+                            '<span class="loader-block"></span>' +
+                            '<span class="loader-block"></span>' +
+                            '<span class="loader-block"></span>' +
+                            '<span class="loader-block"></span>' +
+                            '<span class="loader-block"></span>' +
+                            '<span class="loader-block"></span>' +
+                        '</div>' +
                     '</div>'
             },
             {
@@ -52,33 +65,50 @@ Ext.define('Q4App.view.Overview', {
                 items: [
                     {
                         xtype: 'dataview',
+                        html: [
+                            '<span class="icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 16 16" preserveAspectRatio="none"><circle cx="8" cy="8" r="6.215"></circle></svg></span>',
+                            '<span class="icon"><i class="calendar"></i></span>',
+                            '<h2>Event</h2>'
+                        ].join(''),
                         cls: 'companyEvents companyBox',
                         scrollable: null,
                         itemTpl: new Ext.XTemplate(
-                            '<h2>Event</h2>',
-                            '<h3>{Title}</h3>'
+                            '<h3>{StartDate:date("M d, Y")}</h3>',
+                            '<h2>{Title}</h2>'
                         ),
                         store: 'Event'
                     },
                     {
                         xtype: 'dataview',
+                        html: [
+                            '<span class="icon calendar"><i class="calendar"></i></span>',
+                            '<h2>Press Release</h2>'
+                        ].join(''),
                         id: 'companyNews',
                         scrollable: null,
                         cls: 'companyNews companyBox',
                         itemTpl: new Ext.XTemplate(
                             '<tpl for=".">',
-                                '<h2>Press Release</h2>',
-                                '<h3>{Headline}</h3>',
+                                '<h3>{PressReleaseDate:date("M d, Y")}</h3>',
+                                '<h2>{Headline}</h2>',
                             '</tpl>'
                         ),
                         store: 'PressRelease'
                     },
                     {
+                        xtype: 'dataview',
                         cls: 'companyPresentation companyBox',
                         html: [
-                            '<h2>Presentation</h2>',
-                            '<div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>'
-                        ].join('')
+                            '<span class="icon presentation"><i class="calendar"></i></span>',
+                            '<h2>Presentation</h2>'
+                        ].join(''),
+                        itemTpl: new Ext.XTemplate(
+                            '<tpl for=".">',
+                                '<h3>{PresentationDate:date("M d, Y")}</h3>',
+                                '<h2>{Title}</h2>',
+                            '</tpl>'
+                        ),
+                        store: 'Presentation'
                     }
                 ]
             }

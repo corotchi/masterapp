@@ -7,16 +7,20 @@ Ext.define('Q4App.controller.Home', {
         refs: {
             main: 'main',
             home: 'home',
+            navigation: 'navigation',
             menu: 'navigation button',
             back: 'navigation button[id="back"]',
             overview: 'overview',
-            searchPanel: 'panel[cls="searchPanel"]',
+            searchPanel: 'panel[id="searchPanel"]',
+            searchBtn: 'panel[id="searchPanel"] button[cls="cancel"]',
             search: 'searchfield'
         },
         control: {
             home: {
                 initialize: 'onHomeInit',
-                itemtap: 'onItemTap'
+                itemtap: 'onItemTap',
+                hide: 'onHomeHide',
+                show: 'onHomeShow'
             },
 
             menu: {
@@ -24,7 +28,16 @@ Ext.define('Q4App.controller.Home', {
             },
 
             search: {
-                keyup: 'onSearchKeyUp'
+                keyup: 'onSearchKeyUp',
+                clearicontap: 'onSearchClear'
+            },
+
+            searchBtn: {
+                tap: 'onSearchClose'
+            },
+
+            searchPanel: {
+                hide: 'onSearchHide'
             }
         }
     },
@@ -32,6 +45,32 @@ Ext.define('Q4App.controller.Home', {
     onHomeInit: function () {
 
     },
+
+    onHomeHide: function () {
+        var menuItems = this.getNavigation().getItems().items;
+        this.getSearchPanel().hide();
+
+        Ext.each(menuItems, function(item){
+           item.setDisabled(true);
+        }, this)
+        this.getBack().setDisabled(false);
+    },
+
+    onHomeShow: function () {
+        var menuItems = this.getNavigation().getItems().items;
+        Ext.each(menuItems, function(item){
+            item.setDisabled(false);
+        }, this)
+    },
+
+    onSearchClose: function (button) {
+        this.getSearchPanel().hide();
+    },
+
+    onSearchHide: function() {
+        this.getNavigation().down('button[id="search"]').removeCls('active');
+    },
+
 
     onItemTap: function (list, el, index, record) {
         var overview = Ext.create(Q4App.view.Overview);
@@ -41,30 +80,32 @@ Ext.define('Q4App.controller.Home', {
             duration: 1000
         });
 
+        overview.down('container[id="companyTitle"]').setData([{exchange: record.getData().stock.exchange, title: record.getData().title}])
 
         this.loadNews(record.getData());
         this.loadStock(record.getData());
         this.loadChart(record.getData());
         this.loadEvents(record.getData());
+        this.loadPresentation(record.getData());
 
         this.getMenu().hide();
         this.getBack().show();
     },
 
     loadNews: function(data) {
-        var newsStore = Ext.getStore('PressRelease'),
-            proxy = newsStore.getProxy(),
+        var store = Ext.getStore('PressRelease'),
+            proxy = store.getProxy(),
             param = proxy.getExtraParams();
 
         proxy.setUrl(data.siteUrl + "/feed/PressRelease.svc/GetPressReleaseList");
         param.apiKey = data.apiKey;
 
-        newsStore.load()
+        store.load()
     },
 
     loadStock: function(data) {
-        var stockStore = Ext.getStore('Stock'),
-            proxy = stockStore.getProxy(),
+        var store = Ext.getStore('Stock'),
+            proxy = store.getProxy(),
             param = proxy.getExtraParams();
 
         proxy.setUrl(data.siteUrl + '/feed/StockQuote.svc/GetStockQuoteList');
@@ -72,12 +113,12 @@ Ext.define('Q4App.controller.Home', {
         param.exchange = data.stock.exchange;
         param.symbol = data.stock.symbol;
 
-        stockStore.load();
+        store.load();
     },
 
     loadChart: function(data) {
-        var chartStore = Ext.getStore('StockChart'),
-            proxy = chartStore .getProxy(),
+        var store = Ext.getStore('StockChart'),
+            proxy = store .getProxy(),
             param = proxy.getExtraParams();
 
         proxy.setUrl(data.siteUrl + '/feed/StockQuote.svc/GetStockQuoteHistoricalList');
@@ -85,18 +126,29 @@ Ext.define('Q4App.controller.Home', {
         param.exchange = data.stock.exchange;
         param.symbol = data.stock.symbol;
 
-        chartStore.load();
+        store.load();
     },
 
     loadEvents: function(data){
-        var eventStore = Ext.getStore('Event'),
-            proxy = eventStore.getProxy(),
+        var store = Ext.getStore('Event'),
+            proxy = store.getProxy(),
             param = proxy.getExtraParams();
 
         proxy.setUrl(data.siteUrl + "/feed/Event.svc/GetEventList");
         param.apiKey = data.apiKey;
 
-        eventStore.load(function(records){
+        store.load();
+    },
+
+    loadPresentation: function(data){
+        var store = Ext.getStore('Presentation'),
+            proxy = store.getProxy(),
+            param = proxy.getExtraParams();
+
+        proxy.setUrl(data.siteUrl + "/feed/Presentation.svc/GetPresentationList");
+        param.apiKey = data.apiKey;
+
+        store.load(function(records){
             console.log(records);
         })
     },
@@ -131,7 +183,14 @@ Ext.define('Q4App.controller.Home', {
     },
 
     searchList: function(button) {
-        this.getSearchPanel().showBy(button)
+        if(this.getSearchPanel().isHidden( )){
+            button.setCls('active');
+            this.getSearchPanel().show();
+        }
+        else {
+            button.removeCls('active');
+            this.getSearchPanel().hide();
+        }
     },
 
     onSearchKeyUp: function(searchfield, e) {
@@ -140,17 +199,25 @@ Ext.define('Q4App.controller.Home', {
 
         store.clearFilter()
         store.filterBy(function(record){
-            var title = record.get('title').toLowerCase();
-            if(title.indexOf(string) >= 0)
+            var title = record.get('title').toLowerCase(),
+                symbol = record.get('stock').symbol.toLowerCase(),
+                exchange= record.get('stock').exchange.toLowerCase();
+
+            if(title.indexOf(string) >= 0 || exchange.indexOf(string) >= 0 || symbol.indexOf(string) >= 0)
                 return record;
         });
+    },
+
+    onSearchClear: function() {
+        var store = Ext.getStore('Company');
+        store.clearFilter()
     },
 
     backHome: function(button) {
         this.getOverview().destroy();
         this.getHome().show({
             type: 'fadeIn',
-            duration: 1000
+            duration: 400
         });
 
         this.getMenu().show();

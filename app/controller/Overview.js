@@ -31,7 +31,7 @@ Ext.define('Q4App.controller.Overview', {
 
 
         chartData.reverse();
-//        this.highChartInit(chartData);
+        this.highChartInit(chartData);
     },
 
     highChartInit: function(data) {
@@ -47,7 +47,7 @@ Ext.define('Q4App.controller.Overview', {
 
                     },
                     redraw: function(event) {
-                        alert ('Chart loaded');
+
                     }
                 }
             },

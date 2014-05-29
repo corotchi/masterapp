@@ -21,22 +21,27 @@ Ext.application({
         'Main',
         'Navigation',
         'Home',
-        'Overview'
+        'Overview',
+        'Favorite'
     ],
 
     stores: [
         'Company',
         'Event',
         'PressRelease',
+        'Presentation',
         'Stock',
-        'StockChart'
+        'StockChart',
+        'Mash'
     ],
 
     models: [
         'Company',
         'Event',
         'PressRelease',
-        'Stock'
+        'Presentation',
+        'Stock',
+        'Mash'
     ],
 
     controllers: [

@@ -3,7 +3,9 @@
   -webkit-perspective: 1000;
 
   .companyName {
-    padding:40px 40px 50px;
+    padding:20px 40px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.09);
+    margin-bottom: 30px;
 
     h2 {
       font-size: 20px;
@@ -18,10 +20,14 @@
 
 
   .stockQuote {
+    margin-top: 44px;
     padding-left: 40px;
-    height: 280px;
-    float: left;
     padding-right: 50px;
+    float: left;
+
+    .x-inner {
+      border-bottom: 1px solid rgba(255,255,255,0.09);
+    }
 
     h3 {
       font-weight: 200;
@@ -52,7 +58,8 @@
   #overviewChart {
     margin-left: 360px;
     margin-right: 40px;
-//    opacity: 0;
+    position: relative;
+    min-height: 170px;
 
     &.active {
       animation: fadein 2s;
@@ -73,22 +80,64 @@
   .companyBox {
     float: left;
     width: 33%;
-    height: 170px;
+    height: 290px;
     padding: 10px;
-    text-transform: uppercase;
     font-size: 14px;
 
-    .x-inner {
-      background-color: rgba(255, 255, 255, 0.05);
-      padding: 20px;
-      height: 150px;
-      overflow: hidden;
+
+    h3 {
+      text-transform: uppercase;
+      font-size: 13px;
     }
 
     h2 {
+      padding-top: 5px;
+      padding-bottom: 10px;
       font-size: 13px;
       color: #76bfb9;
-      padding-bottom: 10px;
+    }
+
+    .x-innerhtml {
+      text-align: center;
+      padding-bottom: 20px;
+
+      svg circle{
+        opacity: 0;
+        fill: none;
+        stroke: #fff;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-dasharray: 39 39;
+        stroke-dashoffset: 39;
+        /* length of circle path (pi*2r) */
+        -webkit-transition: stroke-dashoffset 2.3s, opacity 1.3s;
+        transition: stroke-dashoffset 0.3s, opacity 0.3s;
+      }
+
+      .icon {
+        display: inline-block;
+        border-radius: 50px;
+        border: 1px solid #50ada5;
+        height: 70px;
+        width: 70px;
+        line-height: 80px;
+      }
+
+      i {
+        background-image: theme_image('q4', "overviewCalendar.png");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        width: 22px;
+        height: 22px;
+        display: inline-block;
+      }
+    }
+
+    .x-inner {
+      text-align: center;
+      padding: 20px;
+      overflow: hidden;
     }
 
   }
@@ -117,107 +166,142 @@
 }
 
 
+$blockSize: .5em;
+$delay: .065s;
+$duration: 1.88s;
+$startingColor: rgba(253, 253, 253, 0.33);
+$endingColor: #dadada;
 
-@keyframes fadein {
-  from {
-    opacity:0;
+// Calculate some values
+$blockMargin: $blockSize / 3;
+$loaderSize: $blockSize * 3 + $blockMargin * 2;
+
+@mixin animation-delay( $delay ) {
+  -webkit-animation-delay: $delay;
+  animation-delay: $delay;
+}
+
+// Official syntax supported by IE10, FF16, Opera 12.1,
+// so we're only going to add the webkit prefix
+@mixin animation( $ani1:null, $ani2:null ) {
+  @if ($ani2 != null) {
+    -webkit-animation: $ani1, $ani2;
+    animation: $ani1, $ani2;
+  }
+
+  @else if ($ani1 != null) {
+    -webkit-animation: $ani1;
+    animation: $ani1;
+  }
+}
+
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: $loaderSize;
+  height: $loaderSize;
+  margin-left: -$loaderSize/2;
+  margin-top: -$loaderSize/2;
+}
+
+.loader-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  opacity: 0;
+  width: $blockSize;
+  height: $blockSize;
+  background: $startingColor;
+  @include animation(show $duration step-end infinite alternate,
+          pulse $duration linear infinite alternate);
+}
+
+
+
+// Second
+.loader-block:nth-child(1) {
+  @include translate(0, 0);
+  @include animation-delay(1 * $delay);
+}
+
+// Ninth
+.loader-block:nth-child(2) {
+  @include translate($blockSize + $blockMargin, 0);
+  @include animation-delay(2 * $delay);
+}
+
+// Fourth
+.loader-block:nth-child(3) {
+  @include translate(($blockSize * 2) + ($blockMargin * 2), 0);
+  @include animation-delay(3 * $delay);
+}
+
+// Sixth
+.loader-block:nth-child(4) {
+  @include translate(0, $blockSize + $blockMargin);
+  @include animation-delay(5 * $delay);
+}
+
+// Third
+.loader-block:nth-child(5) {
+  @include translate($blockSize + $blockMargin, $blockSize + $blockMargin);
+  @include animation-delay(2 * $delay);
+}
+
+// Eighth
+.loader-block:nth-child(6) {
+  @include translate(($blockSize * 2) + ($blockMargin * 2), $blockSize + $blockMargin);
+  @include animation-delay(7 * $delay);
+}
+
+// Seventh
+.loader-block:nth-child(7) {
+  @include translate(0, ($blockSize * 2) + ($blockMargin * 2));
+  @include animation-delay(6 * $delay);
+}
+
+// Fifth
+.loader-block:nth-child(8) {
+  @include translate($blockSize + $blockMargin, ($blockSize * 2) + ($blockMargin * 2));
+  @include animation-delay(4 * $delay);
+}
+
+// First
+.loader-block:nth-child(9) {
+  @include translate(($blockSize * 2) + ($blockMargin * 2), ($blockSize * 2) + ($blockMargin * 2));
+}
+
+
+@-webkit-keyframes pulse {
+  from,
+  40% {
+    background: $startingColor;
   }
   to {
-    opacity:1;
+    background: $endingColor;
   }
 }
-@-moz-keyframes fadein { /* Firefox */
-  from {
-    opacity:0;
+
+@-webkit-keyframes show {
+  from, 40% { opacity: 0; }
+  41%, to { opacity: 1; }
+}
+
+@keyframes pulse {
+  from,
+  40% {
+    background: $startingColor;
   }
   to {
-    opacity:1;
-  }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-  from {
-    opacity:0;
-  }
-  to {
-    opacity:1;
-  }
-}
-@-o-keyframes fadein { /* Opera */
-  from {
-    opacity:0;
-  }
-  to {
-    opacity: 1;
+    background: $endingColor;
   }
 }
 
-
-
-
-.wrapper {
-  position: relative;
-  margin: 40px auto;
-  background: white;
+@keyframes show {
+  from, 40% { opacity: 0; }
+  41%, to { opacity: 1; }
 }
 
-@mixin timer($item, $duration, $size, $color, $border, $hover: running) {
-  #{$item}, #{$item} * { @include box-sizing(border-box); }
-
-  #{$item} {
-    width: $size;
-    height: $size;
-  }
-
-  #{$item} .pie {
-    width: 50%;
-    height: 100%;
-    transform-origin: 100% 50%;
-    position: absolute;
-    background: $color;
-    border: #{$border};
-  }
-
-  #{$item} .spinner {
-    border-radius: 100% 0 0 100% / 50% 0 0 50%;
-    z-index: 200;
-    border-right: none;
-    animation: rota $duration + s linear infinite;
-  }
-
-  #{$item}:hover .spinner,
-  #{$item}:hover .filler,
-  #{$item}:hover .mask {
-    animation-play-state: $hover;
-  }
-
-  #{$item} .filler {
-    border-radius: 0 100% 100% 0 / 0 50% 50% 0;
-    left: 50%;
-    opacity: 0;
-    z-index: 100;
-    animation: opa $duration + s steps(1,end) infinite reverse;
-    border-left: none;
-  }
-
-  #{$item} .mask {
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    background: inherit;
-    opacity: 1;
-    z-index: 300;
-    animation: opa $duration + s steps(1,end) infinite;
-  }
-
-  @keyframes rota {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-
-  @keyframes opa {
-    0% { opacity: 1; }
-    50%, 100% { opacity: 0; }
-  }
-}
-
-@include timer('.wrapper', 5, 250px, #08C, '5px solid rgba(0,0,0,0.5)');

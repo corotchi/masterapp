@@ -10,13 +10,24 @@ Ext.define('Q4App.view.Main', {
                 xtype: 'navigation'
             },
             {
-                xtype: 'panel',
-                cls: 'searchPanel',
-                hideOnMaskTap: true,
-                modal: true,
                 hidden: true,
-                top: 0,
+                xtype: 'panel',
+                id: 'searchPanel',
+                cls: 'searchPanel',
+                docked: 'top',
                 items: [
+                    {
+                        cls: 'cancel',
+                        xtype: 'button',
+                        text: 'cancel',
+                        right: 10,
+                        top: 8
+                    },
+                    {
+                        xtype: 'button',
+                        iconCls: 'search',
+                        left: 0
+                    },
                     {
                         xtype: 'searchfield',
                         name: 'query'
@@ -24,7 +35,8 @@ Ext.define('Q4App.view.Main', {
                 ]
 
             },
-            {xtype: 'home'}
+//            {xtype: 'favorite'},
+            {xtype: 'home'},
 //            {xtype: 'overview'}
         ]
     }

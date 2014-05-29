@@ -21,7 +21,7 @@
 
     .x-button-icon {
       background-repeat: no-repeat;
-      background-size: 100% auto;
+      background-size: 96% auto;
 
       &.search {
         background-image: theme_image('q4', "sortSearch.png");
@@ -47,30 +47,86 @@
         display: none;
       }
     }
+
+    &.active {
+      background-color: #50ada5;
+    }
   }
 
 }
 
-.x-panel.x-floating.searchPanel {
-  $c: #2a3138;
-  margin-top: -71px;
-  margin-left: 60px;
-  height: 70px;
-  background-color: $c;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-left: none;
+.searchPanel {
+  background: #242932;
+  background-size: 100%;
+  height: 65px;
 
-  .x-panel-inner {
-    background-color: $c;
+  .x-button {
+    padding: 15px 15px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0;
+    margin: 0;
+    color: #fff;
+    height: 65px;
+    border: none;
+
+    &.cancel {
+      font-weight: normal;
+      background: #2a2f37;
+      height: auto;
+      text-transform: uppercase;
+      font-size: 13px;
+      padding: 15px 20px;
+      border-radius: 25px;
+
+      &.x-button-pressing {
+        background: #50ada5;
+      }
+    }
+
+    .x-button-label {
+      font-weight: normal;
+    }
+
+    .x-button-icon {
+      background-repeat: no-repeat;
+      background-size: 96% auto;
+
+      &.search {
+        background-image: theme_image('q4', "sortSearch.png");
+      }
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  .x-component-outer{
+    padding-left: 50px;
+    padding-right: 15px;
   }
 
   .x-field-input {
-    padding: 13px 10px;
 
     .x-input-el {
+      background: none;
       margin: 0;
       border: none;
-      padding: 3px;
+      padding: 3px 150px 3px 3px;
+      font-size: 40px;
+      color: #fff;
+    }
+
+    .x-clear-icon {
+      background: url("../images/icons/clear.png");
+      background-size: 100%;
+      width: 38px;
+      height: 40px;
+      background-repeat: no-repeat;
+      top: 11px;
+      right: 100px;
     }
   }
 }
