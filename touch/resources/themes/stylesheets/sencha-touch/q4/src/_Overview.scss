@@ -3,30 +3,47 @@
   -webkit-perspective: 1000;
 
   .companyName {
-    padding:20px 40px 20px;
-    border-bottom: 1px solid rgba(255,255,255,0.09);
-    margin-bottom: 30px;
 
-    h2 {
-      font-size: 20px;
+    .x-button {
+      background: #20262a;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
       text-transform: uppercase;
+      font-weight: normal;
+      padding: 10px 20px;
 
-      span {
-        color: #76bfb9;
-        padding-right: 10px;
+      .x-button-label {
+        font-weight: 400;
+      }
+
+      &.follow {
+        background-color: #50ada5;
+
+        &.x-button-pressing, &.x-button-pressed {
+          background: #dad27d;
+        }
       }
     }
   }
 
 
   .stockQuote {
-    margin-top: 44px;
-    padding-left: 40px;
-    padding-right: 50px;
     float: left;
+    height: 225px;
+    width: 350px;
+    padding: 30px 30px 0 50px;
+
+    .x-mask {
+      display: none;
+    }
 
     .x-inner {
       border-bottom: 1px solid rgba(255,255,255,0.09);
+    }
+
+    .x-dataview-item {
+      padding-top: 20px;
     }
 
     h3 {
@@ -56,8 +73,7 @@
 
 
   #overviewChart {
-    margin-left: 360px;
-    margin-right: 40px;
+    margin: 50px 40px 0 400px;
     position: relative;
     min-height: 170px;
 
@@ -80,10 +96,13 @@
   .companyBox {
     float: left;
     width: 33%;
-    height: 290px;
+    height: 270px;
     padding: 10px;
     font-size: 14px;
 
+    .x-mask {
+      display: none;
+    }
 
     h3 {
       text-transform: uppercase;
@@ -97,40 +116,12 @@
       color: #76bfb9;
     }
 
-    .x-innerhtml {
+    .head {
       text-align: center;
       padding-bottom: 20px;
 
-      svg circle{
-        opacity: 0;
-        fill: none;
-        stroke: #fff;
-        stroke-width: 3;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke-dasharray: 39 39;
-        stroke-dashoffset: 39;
-        /* length of circle path (pi*2r) */
-        -webkit-transition: stroke-dashoffset 2.3s, opacity 1.3s;
-        transition: stroke-dashoffset 0.3s, opacity 0.3s;
-      }
-
-      .icon {
-        display: inline-block;
-        border-radius: 50px;
-        border: 1px solid #50ada5;
-        height: 70px;
-        width: 70px;
-        line-height: 80px;
-      }
-
-      i {
-        background-image: theme_image('q4', "overviewCalendar.png");
-        background-repeat: no-repeat;
-        background-size: 100% auto;
-        width: 22px;
-        height: 22px;
-        display: inline-block;
+      h2 {
+        text-transform: uppercase;
       }
     }
 
@@ -142,7 +133,103 @@
 
   }
 
+  .icon {
+    display: inline-block;
+    border-radius: 50px;
+    border: 1px solid #50ada5;
+    height: 70px;
+    width: 70px;
+    line-height: 80px;
+    text-align: center;
+
+    i {
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      width: 22px;
+      height: 22px;
+      display: inline-block;
+
+      &.calendar {
+        background-image: theme_image('q4', "overviewCalendar.png");
+      }
+
+      &.news {
+        background-image: theme_image('q4', "overviewNews.png");
+      }
+
+      &.presentation{
+        background-image: theme_image('q4', "overviewPresentation.png");
+        width: 15px;
+      }
+
+    }
+  }
+
+
+  .x-dataview-item {
+
+    &.x-item-pressed {
+      .icon {
+        border: 1px solid #5be9e1;
+        box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.16);
+      }
+
+      .head h2 {
+        color: #5be9e1;
+      }
+    }
+  }
+
 }
+
+
+.overviewDetails {
+  padding: 0 20px 0px;
+
+  .head {
+    padding-bottom: 20px;
+    .icon {
+      display: inline-block;
+    }
+
+    h3 {
+      font-size: 13px;
+      color: #76bfb9;
+      text-transform: uppercase;
+      display: inline-block;
+      padding-left: 20px;
+    }
+
+  }
+
+  .body {
+    padding: 0 90px;
+    font-size: 1.1em;
+    font-weight: 300;
+    word-break: break-word;
+
+    * {
+      color: #fff !important;
+    }
+  }
+
+  h1.mainTitle {
+    font-size: 2.2em;
+    line-height: normal;
+    margin-bottom: 15px;
+  }
+
+  img {
+    float: left;
+    max-width: 280px;
+    display: block;
+    margin: 0 10px 0px 0;
+  }
+
+}
+
+
+
 
 .x-portrait {
 

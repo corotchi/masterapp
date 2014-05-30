@@ -10,6 +10,7 @@ Ext.define('Q4App.store.Company', {
         proxy: {
             type: "jsonp",
             url : "http://q4app.com/api/projects",
+//            url : "http://192.168.1.136:3000/api/projects",
             extraParams: {
               live: true
             },

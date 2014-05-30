@@ -12,7 +12,7 @@ Ext.define('Q4App.store.PressRelease', {
                 pageSize: 1,
                 categoryId: '1cb807d2-208f-4bc3-9133-6a9ad45ac3b0',
                 pressReleaseDateFilter: 3,
-                bodyType: 3,
+                bodyType: 1,
                 year: -1
             },
             reader: {

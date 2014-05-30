@@ -9,7 +9,7 @@ Ext.define('Q4App.store.Mash', {
         autoLoad: true,
         proxy: {
             type: "jsonp",
-            url : "http://localhost:3000/niri/api/getdata",
+            url : "http://192.168.1.136:5000/niri/api/getdata",
             extraParams: {},
             reader: {
                 type: "json"

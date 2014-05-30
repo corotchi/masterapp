@@ -80,7 +80,9 @@ Ext.define('Q4App.controller.Home', {
             duration: 1000
         });
 
-        overview.down('container[id="companyTitle"]').setData([{exchange: record.getData().stock.exchange, title: record.getData().title}])
+        overview.down('titlebar button[id="externalSite"]').setData(record.getData());
+        overview.down('titlebar')
+            .setTitle('<span>' + record.getData().stock.exchange + ':</span>' + record.getData().title);
 
         this.loadNews(record.getData());
         this.loadStock(record.getData());
@@ -148,9 +150,7 @@ Ext.define('Q4App.controller.Home', {
         proxy.setUrl(data.siteUrl + "/feed/Presentation.svc/GetPresentationList");
         param.apiKey = data.apiKey;
 
-        store.load(function(records){
-            console.log(records);
-        })
+        store.load();
     },
 
     onMenuTap: function(button) {

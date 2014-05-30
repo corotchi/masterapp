@@ -3,15 +3,14 @@
  */
 
 .x-button {
-    @include background-clip(padding-box);
-    @include toolbar-button(#ccc, $button-gradient);
-
-    @if $include-border-radius {
-        @include border-radius($button-radius);
-    }
-
+    border-radius: 5px;
     min-height: $button-height;
     padding: .3em .6em;
+    background: #20262a;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
 
     // Default icon style
     .x-button-icon {
@@ -26,7 +25,7 @@
 
     &.x-item-disabled .x-button-label,
     &.x-item-disabled .x-button-icon {
-        opacity: .5;
+        opacity: .1;
     }
 }
 
@@ -58,7 +57,7 @@
 
 // Button labels
 .x-button-label {
-    font-weight: bold;
+    font-weight: 200;
     line-height: 1.2em;
 }
 
@@ -200,11 +199,17 @@ $tip-width: $mask-width - $mask-offset + $shadow-width;
     }
 
     &.x-button-pressing, &.x-button-pressed {
-        background: none;
-
-        $mask-radial-glow: lighten($active-color, 50%);
-        @include background-image(radial-gradient(fade-out($mask-radial-glow, .3), fade-out($mask-radial-glow, 1) 24px));
+        background: #dad27d;
+        /*$mask-radial-glow: lighten($active-color, 50%);*/
     }
+}
+
+.x-toolbar {
+  .x-button {
+    &.x-button-pressing, &.x-button-pressed {
+      background: #dad27d;
+    }
+  }
 }
 
 

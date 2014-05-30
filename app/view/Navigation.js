@@ -16,6 +16,11 @@ Ext.define('Q4App.view.Navigation', {
                 id: 'back'
             },
             {
+                iconCls: 'back',
+                hidden: true,
+                id: 'backDetails'
+            },
+            {
                 iconCls: 'search',
                 id: 'search'
             },
