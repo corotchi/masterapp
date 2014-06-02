@@ -7,10 +7,18 @@ Ext.define('Q4App.store.Company', {
     config: {
         model: 'Q4App.model.Company',
         autoLoad: true,
+
         proxy: {
+            /*enablePagingParams: false,
+            actionMethods: {
+                create : 'POST',
+                read   : 'POST',
+                update : 'PUT',
+                destroy: 'DELETE'
+            },*/
             type: "jsonp",
-            url : "http://q4app.com/api/projects",
-//            url : "http://192.168.1.136:3000/api/projects",
+//            url : "http://q4app.com/api/projects",
+            url : "http://localhost:5000/niri/api/getProjects",
             extraParams: {
               live: true
             },

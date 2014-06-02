@@ -8,7 +8,8 @@ Ext.define('Q4App.view.Navigation', {
         width: 75,
         items: [
             {
-                html: '<img src="resources/images/q4-logo.png" alt="logo"  />'
+                html: '<img src="resources/images/q4-logo.png" alt="logo"  />',
+                id: 'home'
             },
             {
                 iconCls: 'back',

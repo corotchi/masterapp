@@ -1,6 +1,19 @@
 .CompanyOverview {
   -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+
   -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+
+  &.inactive {
+    display: none !important;
+  }
+
+
 
   .companyName {
 
@@ -91,12 +104,12 @@
     position: absolute;
     bottom: 30px;
     width: 100%;
-    padding: 30px;
+    padding: 30px 30px 0;
   }
   .companyBox {
     float: left;
     width: 33%;
-    height: 270px;
+    height: 320px;
     padding: 10px;
     font-size: 14px;
 
@@ -124,11 +137,32 @@
         text-transform: uppercase;
       }
     }
+    
+    .body {
+      h2 {
+        display: inline-block;
+        vertical-align: top;
+        overflow: hidden;
+        height: 72px;
+      }
+    }
 
     .x-inner {
       text-align: center;
       padding: 20px;
       overflow: hidden;
+    }
+
+
+    .view_more {
+      background-color: rgba(32, 38, 42, 0.61);
+      border-radius: 5px;
+      display: block;
+      padding: 10px 20px;
+      text-align: center;
+      color: #FFFFFF;
+      width: 180px;
+      margin: 20px auto 0;
     }
 
   }

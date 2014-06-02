@@ -5,8 +5,10 @@ Ext.define('Q4App.controller.Overview', {
         refs: {
             back: 'navigation button[id="back"]',
             backDetails: 'navigation button[id="backDetails"]',
+            titlebar: 'overview titlebar',
+            siteBtn: 'overview titlebar button[id="externalSite"]',
+            followBtn: 'overview titlebar button[id="followBtn"]',
             overview: 'overview',
-            siteBtb: 'overview titlebar button[id="externalSite"]',
             details: 'overview panel',
             overviewBox: 'overview dataview'
         },
@@ -23,8 +25,12 @@ Ext.define('Q4App.controller.Overview', {
                 tap: 'onBackTap'
             },
 
-            siteBtb: {
+            siteBtn: {
                 tap: 'onSiteTap'
+            },
+
+            followBtn: {
+                tap: 'onFollowTap'
             }
         }
     },
@@ -157,7 +163,38 @@ Ext.define('Q4App.controller.Overview', {
     },
 
     onSiteTap: function (button) {
-        window.open(button.getData().siteUrl + '/m', '_blank', 'location=yes')
+        var url = this.getTitlebar().getData().siteUrl;
+        window.open(url + '/m', '_blank', 'location=yes')
+    },
+
+    onFollowTap: function () {
+        var data = this.getTitlebar().getData();
+
+        var dataModel = {
+            shortName: data.shortName,
+            id: data._id,
+            favorite: !data.favorite
+        };
+
+        Ext.Ajax.request({
+            url : 'http://localhost:5000/niri/api/favorite',
+            method : "PUT",
+             headers: {
+                'Content-Type': 'application/json'
+             },
+            params : Ext.JSON.encode(dataModel),
+            useDefaultXhrHeader : false,
+                success : function(response) {
+                    console.log(response);
+                    var store = Ext.getStore('Company');
+                    store.findRecord('shortName', data.shortName).data.favorite = !data.favorite;
+
+                    /*Ext.Msg.alert("Success", "Welcome ");*/
+                },
+                failure : function(response) {
+                    console.log(response);
+                }
+            });
     }
 
 

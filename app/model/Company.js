@@ -5,6 +5,7 @@ Ext.define('Q4App.model.Company', {
         fields: [
             "version",
             "live",
+            "favorite",
             "apiKey",
             "clientLogo",
             "splashLogo",

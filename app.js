@@ -32,6 +32,7 @@ Ext.application({
         'Presentation',
         'Stock',
         'StockChart',
+        /*'Favorite',*/
         'Mash'
     ],
 
@@ -71,6 +72,19 @@ Ext.application({
     launch: function() {
         // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
+
+        /*Ext.device.Notification.show({
+            title    : 'Verification',
+            message  : 'Is your email address: test@sencha.com',
+            buttons  : Ext.MessageBox.OKCANCEL,
+            callback : function(button) {
+                if (button === "ok") {
+                    console.log('Verified');
+                } else {
+                    console.log('Nope');
+                }
+            }
+        });*/
 
         // Initialize the main view
         Ext.Viewport.add(Ext.create('Q4App.view.Main'));

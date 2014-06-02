@@ -42,11 +42,32 @@ Ext.define('Q4App.controller.Home', {
         }
     },
 
-    onHomeInit: function () {
+    onHomeInit: function () {},
 
+    onMenuTap: function(button) {
+        switch (button.getId()) {
+            case 'sort' :
+                this.sortList(button);
+                break;
+            case 'home' :
+                this.goHome(button);
+                break;
+            case 'bookmark' :
+                this.bookmarkList(button);
+                break;
+            case 'search' :
+                this.searchList(button);
+                break;
+            case 'back' :
+                this.backHome(button);
+                break;
+            default :
+                break;
+        }
     },
 
-    onHomeHide: function () {
+    onHomeHide: function (viewport) {
+        viewport.addCls('inactive');
         var menuItems = this.getNavigation().getItems().items;
         this.getSearchPanel().hide();
 
@@ -56,11 +77,12 @@ Ext.define('Q4App.controller.Home', {
         this.getBack().setDisabled(false);
     },
 
-    onHomeShow: function () {
+    onHomeShow: function (viewport) {
         var menuItems = this.getNavigation().getItems().items;
         Ext.each(menuItems, function(item){
             item.setDisabled(false);
         }, this)
+        viewport.removeCls('inactive');
     },
 
     onSearchClose: function (button) {
@@ -80,7 +102,10 @@ Ext.define('Q4App.controller.Home', {
             duration: 1000
         });
 
-        overview.down('titlebar button[id="externalSite"]').setData(record.getData());
+
+        console.log(record.getData());
+
+        overview.down('titlebar').setData(record.getData());
         overview.down('titlebar')
             .setTitle('<span>' + record.getData().stock.exchange + ':</span>' + record.getData().title);
 
@@ -153,22 +178,6 @@ Ext.define('Q4App.controller.Home', {
         store.load();
     },
 
-    onMenuTap: function(button) {
-        switch (button.getId()) {
-            case 'sort' :
-                this.sortList(button);
-                   break;
-            case 'search' :
-                this.searchList(button);
-                break;
-            case 'back' :
-                this.backHome(button);
-                break;
-            default :
-                break;
-        }
-    },
-
     sortReverse: false,
 
     sortList: function(button) {
@@ -193,6 +202,16 @@ Ext.define('Q4App.controller.Home', {
         }
     },
 
+    bookmarkList: function (button) {
+        button.setCls('active');
+        var store = Ext.getStore('Company');
+
+        store.filterBy(function(record){
+            return record.get('favorite') == true
+        });
+
+    },
+
     onSearchKeyUp: function(searchfield, e) {
         var string = searchfield.getValue().toLowerCase(),
             store = Ext.getStore('Company');
@@ -213,13 +232,20 @@ Ext.define('Q4App.controller.Home', {
         store.clearFilter()
     },
 
+    goHome: function (button) {
+        this.getSearchPanel().hide();
+        var menuItems = this.getNavigation().getItems().items;
+        var store = Ext.getStore('Company');
+        store.clearFilter()
+
+        Ext.each(menuItems, function(item){
+            item.removeCls('active');
+        }, this)
+    },
+
     backHome: function(button) {
         this.getOverview().destroy();
-        this.getHome().show({
-            type: 'fadeIn',
-            duration: 400
-        });
-
+        this.getHome().show();
         this.getMenu().show();
         button.hide();
     }

@@ -13,7 +13,8 @@ Ext.define('Q4App.view.Overview', {
                         cls: 'follow',
                         text: 'Follow',
                         align: 'right',
-                        width: 130
+                        width: 130,
+                        id: 'followBtn'
                     },
                     {
                         id: 'externalSite',
@@ -80,65 +81,73 @@ Ext.define('Q4App.view.Overview', {
                         cls: 'companyFeedContainer',
                         items: [
                             {
-                                /*html: [
-                                    '<span class="icon"><i class="calendar"></i></span>',
-                                    '<h2>Event</h2>'
-                                ].join(''),*/
                                 xtype: 'dataview',
                                 cls: 'companyEvents companyBox',
                                 scrollable: null,
-                                itemTpl: new Ext.XTemplate(
+                                emptyText: [
                                     '<div class="head">',
-                                        '<span class="icon"><i class="calendar"></i></span>',
-                                        '<h2>Event</h2>',
+                                    '<span class="icon"><i class="calendar"></i></span>',
+                                    '<h2>Event</h2>',
                                     '</div>',
-                                    '<div class="body">',
-                                        '<h3>{StartDate:date("M d, Y")}</h3>',
-                                        '<h2>{Title}</h2>',
-                                    '</div>'
+                                ].join(''),
+                                itemTpl: new Ext.XTemplate(
+                                    '<tpl for=".">',
+                                        '<div class="head">',
+                                            '<span class="icon"><i class="calendar"></i></span>',
+                                            '<h2>Event</h2>',
+                                        '</div>',
+                                        '<div class="body">',
+                                            '<h3>{StartDate:date("M d, Y")}</h3>',
+                                            '<h2>{Title}</h2>',
+                                        '</div>',
+                                        '<span class="view_more">View Details</span>',
+                                    '</tpl>'
                                 ),
                                 store: 'Event'
                             },
                             {
                                 xtype: 'dataview',
-                               /* html: [
-                                    '<span class="icon"><i class="news"></i></span>',
-                                    '<h2>Press Release</h2>'
-                                ].join(''),*/
                                 id: 'companyNews',
                                 scrollable: null,
                                 cls: 'companyNews companyBox',
                                 itemTpl: new Ext.XTemplate(
-                                    '<div class="head">',
-                                        '<span class="icon"><i class="news"></i></span>',
-                                        '<h2>Press Release</h2>',
-                                    '</div>',
-                                    '<div class="body">',
-                                        '<tpl for=".">',
-                                            '<h3>{PressReleaseDate:date("M d, Y")}</h3>',
-                                            '<h2>{Headline}</h2>',
-                                        '</tpl>',
-                                    '</div>'
+                                    '<tpl for=".">',
+                                        '<div class="head">',
+                                            '<span class="icon"><i class="news"></i></span>',
+                                            '<h2>Press Release</h2>',
+                                        '</div>',
+                                        '<div class="body">',
+                                                '<h3>{PressReleaseDate:date("M d, Y")}</h3>',
+                                                '<h2>{Headline}</h2>',
+                                        '</div>',
+                                        '<span class="view_more">View Details</span>',
+                                    '</tpl>'
                                 ),
                                 store: 'PressRelease'
                             },
                             {
                                 xtype: 'dataview',
                                 cls: 'companyPresentation companyBox',
-                                /*html: [
-                                    '<span class="icon"><i class="presentation"></i></span>',
-                                    '<h2>Presentation</h2>'
-                                ].join(''),*/
                                 scrollable: null,
-                                emptyText: '<span>No Presentation Found</span>',
-                                itemTpl: new Ext.XTemplate(
+                                emptyText: [
                                     '<div class="head">',
                                         '<span class="icon"><i class="presentation"></i></span>',
                                         '<h2>Presentation</h2>',
                                     '</div>',
+                                    '<h2>No Presentation Found</h2>'
+
+                                ].join(''),
+                                itemTpl: new Ext.XTemplate(
                                     '<tpl for=".">',
-                                    '<h3>{PresentationDate:date("M d, Y")}</h3>',
-                                    '<h2>{Title}</h2>',
+                                        '<div class="head">',
+                                            '<span class="icon"><i class="presentation"></i></span>',
+                                            '<h2>Presentation</h2>',
+                                        '</div>',
+                                        '<div class="body">',
+                                                '<h3>{PresentationDate:date("M d, Y")}</h3>',
+                                                '<h2>{Title}</h2>',
+                                        '</div>',
+                                        '<span class="view_more">View Details</span>',
                                     '</tpl>'
                                 ),
                                 store: 'Presentation'
