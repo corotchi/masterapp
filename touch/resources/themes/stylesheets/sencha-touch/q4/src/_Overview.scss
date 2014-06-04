@@ -24,7 +24,7 @@
       color: #fff;
       text-transform: uppercase;
       font-weight: normal;
-      padding: 10px 20px;
+      padding: 10px 3px;
 
       .x-button-label {
         font-weight: 400;
@@ -36,6 +36,42 @@
         &.x-button-pressing, &.x-button-pressed {
           background: #dad27d;
         }
+      
+        span {
+          padding: 0 13px;
+        }
+        
+        i {
+          &:before {
+            content: "\f055";
+          }
+
+          &.fa-star {
+            color: #fff;
+            visibility: hidden;
+            &:before {
+              content: "\f005";
+            }
+          }
+
+        }
+
+        &.active {
+          i {
+            &:before {
+                content: "\f056"
+            }
+
+            &.fa-star {
+              color: #fff;
+              visibility: visible;
+              &:before {
+                content: "\f005";
+              }
+            }
+          }
+        }
+
       }
     }
   }
@@ -163,6 +199,10 @@
       color: #FFFFFF;
       width: 180px;
       margin: 20px auto 0;
+
+      &.progress {
+        background-color: #dad27d;
+      }
     }
 
   }
@@ -203,14 +243,10 @@
   .x-dataview-item {
 
     &.x-item-pressed {
-      .icon {
-        border: 1px solid #5be9e1;
-        box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.16);
+      .view_more {
+        background-color: #dad27d;
       }
 
-      .head h2 {
-        color: #5be9e1;
-      }
     }
   }
 

@@ -11,7 +11,7 @@ Ext.define('Q4App.view.Overview', {
                 items: [
                     {
                         cls: 'follow',
-                        text: 'Follow',
+                        text: '<i class="fa fa-star""></i><span>Follow</span><i class="fa"></i>',
                         align: 'right',
                         width: 130,
                         id: 'followBtn'
@@ -53,7 +53,7 @@ Ext.define('Q4App.view.Overview', {
                                         symbol =  (changeNumber < 0) ? '-' : '+',
                                         number =  (changeNumber < 0) ? changeNumber * -1 : changeNumber;
 
-                                    return 'Change <span>' + symbol + '</span>' + number;
+                                    return 'Change <span>' + symbol + ' ' + number + '</span>';
                                 }
                             }
                         ),
@@ -82,6 +82,7 @@ Ext.define('Q4App.view.Overview', {
                         items: [
                             {
                                 xtype: 'dataview',
+                                id: 'companyEvents',
                                 cls: 'companyEvents companyBox',
                                 scrollable: null,
                                 emptyText: [
@@ -100,7 +101,7 @@ Ext.define('Q4App.view.Overview', {
                                             '<h3>{StartDate:date("M d, Y")}</h3>',
                                             '<h2>{Title}</h2>',
                                         '</div>',
-                                        '<span class="view_more">View Details</span>',
+                                        '<span class="view_more">Add To Calendar</span>',
                                     '</tpl>'
                                 ),
                                 store: 'Event'
@@ -127,6 +128,7 @@ Ext.define('Q4App.view.Overview', {
                             },
                             {
                                 xtype: 'dataview',
+                                id: 'companyPresentation',
                                 cls: 'companyPresentation companyBox',
                                 scrollable: null,
                                 emptyText: [
@@ -146,8 +148,9 @@ Ext.define('Q4App.view.Overview', {
                                         '<div class="body">',
                                                 '<h3>{PresentationDate:date("M d, Y")}</h3>',
                                                 '<h2>{Title}</h2>',
+                                                /*'{DocumentPath}',*/
                                         '</div>',
-                                        '<span class="view_more">View Details</span>',
+                                        '<span class="view_more">Download PDF</span>',
                                     '</tpl>'
                                 ),
                                 store: 'Presentation'

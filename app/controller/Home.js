@@ -102,9 +102,6 @@ Ext.define('Q4App.controller.Home', {
             duration: 1000
         });
 
-
-        console.log(record.getData());
-
         overview.down('titlebar').setData(record.getData());
         overview.down('titlebar')
             .setTitle('<span>' + record.getData().stock.exchange + ':</span>' + record.getData().title);
