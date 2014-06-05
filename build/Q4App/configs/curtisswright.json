@@ -1,0 +1,74 @@
+{
+"apiKey": "A5FA9FF9CBDE483CA3465F570ADD4355",
+
+"getGoogleAnalytics" : {
+	"account": "UA-39862945-1",
+	"domain": "curtisswright.com"
+},
+
+"clientLogo": "http://www.curtisswright.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#91a442"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#91a442"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://curtisswright.q4web.com",
+	
+	"decktopSiteURL": "http://www.curtisswright.com/investors/",
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "CW"
+	},
+	
+	"sec": {
+		"exchange": "NYSE",
+		"symbol"  : "CW"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://www.curtisswright.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 20,
+	
+	"siteMap": 
+	[
+    {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+    },
+
+    {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+    },
+    ],
+
+    "docuemntCategory": 
+    [
+    {
+        "name": "Fact Sheet"
+    },
+    ],
+
+		
+	"title"     : "Curtiss-Wright Corporation",
+	
+	"shortBodyThumbnails": true
+}

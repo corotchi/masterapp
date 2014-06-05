@@ -1,110 +1,30 @@
 Ext.define('Q4App.controller.Home', {
     extend: 'Ext.app.Controller',
-    requires: [
-        'Q4App.view.Overview'
-    ],
+    requires: [],
     config: {
         refs: {
             main: 'main',
             home: 'home',
-            navigation: 'navigation',
-            menu: 'navigation button',
-            back: 'navigation button[id="back"]',
             overview: 'overview',
-            searchPanel: 'panel[id="searchPanel"]',
-            searchBtn: 'panel[id="searchPanel"] button[cls="cancel"]',
-            search: 'searchfield'
         },
         control: {
             home: {
-                initialize: 'onHomeInit',
-                itemtap: 'onItemTap',
-                hide: 'onHomeHide',
-                show: 'onHomeShow'
-            },
-
-            menu: {
-                tap: 'onMenuTap'
-            },
-
-            search: {
-                keyup: 'onSearchKeyUp',
-                clearicontap: 'onSearchClear'
-            },
-
-            searchBtn: {
-                tap: 'onSearchClose'
-            },
-
-            searchPanel: {
-                hide: 'onSearchHide'
+                itemtap: 'onItemTap'
             }
         }
     },
 
-    onHomeInit: function () {},
-
-    onMenuTap: function(button) {
-        switch (button.getId()) {
-            case 'sort' :
-                this.sortList(button);
-                break;
-            case 'home' :
-                this.goHome(button);
-                break;
-            case 'bookmark' :
-                this.bookmarkList(button);
-                break;
-            case 'search' :
-                this.searchList(button);
-                break;
-            case 'back' :
-                this.backHome(button);
-                break;
-            default :
-                break;
-        }
-    },
-
-    onHomeHide: function (viewport) {
-        viewport.addCls('inactive');
-        var menuItems = this.getNavigation().getItems().items;
-        this.getSearchPanel().hide();
-
-        Ext.each(menuItems, function(item){
-           item.setDisabled(true);
-        }, this)
-        this.getBack().setDisabled(false);
-    },
-
-    onHomeShow: function (viewport) {
-        var menuItems = this.getNavigation().getItems().items;
-        Ext.each(menuItems, function(item){
-            item.setDisabled(false);
-        }, this)
-        viewport.removeCls('inactive');
-    },
-
-    onSearchClose: function (button) {
-        this.getSearchPanel().hide();
-    },
-
-    onSearchHide: function() {
-        this.getNavigation().down('button[id="search"]').removeCls('active');
-    },
-
-
     onItemTap: function (list, el, index, record) {
-        var overview = Ext.create(Q4App.view.Overview);
+
+        var overview = (Ext.os.is.Phone) ? Ext.create(Q4App.view.phone.Overview) : Ext.create(Q4App.view.tablet.Overview) ;
+
         this.getHome().hide();
         this.getMain().add(overview).show({
             type: 'fadeIn',
             duration: 1000
         });
 
-        overview.down('titlebar').setData(record.getData());
-        overview.down('titlebar')
-            .setTitle('<span>' + record.getData().stock.exchange + ':</span>' + record.getData().title);
+        overview.setData(record.getData());
 
         this.loadNews(record.getData());
         this.loadStock(record.getData());
@@ -112,8 +32,6 @@ Ext.define('Q4App.controller.Home', {
         this.loadEvents(record.getData());
         this.loadPresentation(record.getData());
 
-        this.getMenu().hide();
-        this.getBack().show();
     },
 
     loadNews: function(data) {
@@ -175,77 +93,7 @@ Ext.define('Q4App.controller.Home', {
         store.load();
     },
 
-    sortReverse: false,
-
-    sortList: function(button) {
-        this.sortReverse = !this.sortReverse;
-
-        var store = Ext.getStore('Company'),
-            type = !this.sortReverse ? 'ASC' : 'DESC',
-            cls = this.sortReverse ? 'sort sortDown' : 'sort sortUp';
-
-        button.setIconCls(cls);
-        store.sort('title', type);
-    },
-
-    searchList: function(button) {
-        if(this.getSearchPanel().isHidden( )){
-            button.setCls('active');
-            this.getSearchPanel().show();
-        }
-        else {
-            button.removeCls('active');
-            this.getSearchPanel().hide();
-        }
-    },
-
-    bookmarkList: function (button) {
-        button.setCls('active');
-        var store = Ext.getStore('Company');
-
-        store.filterBy(function(record){
-            return record.get('favorite') == true
-        });
-
-    },
-
-    onSearchKeyUp: function(searchfield, e) {
-        var string = searchfield.getValue().toLowerCase(),
-            store = Ext.getStore('Company');
-
-        store.clearFilter()
-        store.filterBy(function(record){
-            var title = record.get('title').toLowerCase(),
-                symbol = record.get('stock').symbol.toLowerCase(),
-                exchange= record.get('stock').exchange.toLowerCase();
-
-            if(title.indexOf(string) >= 0 || exchange.indexOf(string) >= 0 || symbol.indexOf(string) >= 0)
-                return record;
-        });
-    },
-
-    onSearchClear: function() {
-        var store = Ext.getStore('Company');
-        store.clearFilter()
-    },
-
-    goHome: function (button) {
-        this.getSearchPanel().hide();
-        var menuItems = this.getNavigation().getItems().items;
-        var store = Ext.getStore('Company');
-        store.clearFilter()
-
-        Ext.each(menuItems, function(item){
-            item.removeCls('active');
-        }, this)
-    },
-
-    backHome: function(button) {
-        this.getOverview().destroy();
-        this.getHome().show();
-        this.getMenu().show();
-        button.hide();
-    }
+    sortReverse: false
 
 
 });

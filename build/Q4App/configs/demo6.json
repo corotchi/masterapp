@@ -1,0 +1,134 @@
+{
+"apiKey": "C1AD4137C6D7490DA08E1EBBC316CA0E",
+
+"getGoogleAnalytics" : {
+    "account": "UA-31604204-1",
+    "domain": "q4web.com"
+},
+
+"clientLogo": "http://darden.q4web.com/files/images/mobile/logoLanding.png",
+    "chartTheme": {
+        "chart": {
+            "zoomType": "none",
+            "pinchType": "none"
+        },
+        "colors": ["#231f20"],
+        "navigator": {
+                    "series": {
+                    "lineWidth": 0,
+                        "color": "#231f20"
+                    }
+            },
+        "tooltip": {
+            "followPointer": true,
+            "followTouchMove": true
+        }
+    },
+
+    "siteUrl"   : "http://darden.q4web.com",
+
+    "decktopSiteURL": "http://investor.darden.com/investors/investor-relations/default.aspx",
+
+    "stock": {
+        "exchange": "NYSE",
+        "symbol"  : "DRI"
+    },
+
+    "sec": {
+        "exchange": "NYSE",
+        "symbol"  : "DRI"
+    },
+
+    "latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+
+    "splashLogo": "http://darden.q4web.com/files/images/mobile/logoSplash.png",
+
+    "pageSize": 28,
+
+    "title"     : "Darden Restaurants Inc.",
+
+    "shortBodyThumbnails": true,
+
+    "magazineChart": true,
+
+    "menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Financial Reports",
+        "titleId": "Financial Reports",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+
+    "siteMap": 
+    [
+        {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+        },
+
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },{
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+        },
+
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },{
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+        },
+
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },{
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+        },
+
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+    ],
+
+
+
+}

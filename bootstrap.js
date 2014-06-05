@@ -746,12 +746,20 @@ Ext.ClassManager.addNameAlternateMappings({
   "Q4App.controller.Home": [],
   "Q4App.controller.Main": [],
   "Q4App.controller.Overview": [],
+  "Q4App.controller.phone.Home": [],
+  "Q4App.controller.phone.Main": [],
+  "Q4App.controller.phone.Overview": [],
+  "Q4App.controller.tablet.Home": [],
+  "Q4App.controller.tablet.Main": [],
+  "Q4App.controller.tablet.Overview": [],
   "Q4App.model.Company": [],
   "Q4App.model.Event": [],
   "Q4App.model.Mash": [],
   "Q4App.model.Presentation": [],
   "Q4App.model.PressRelease": [],
   "Q4App.model.Stock": [],
+  "Q4App.profile.Phone": [],
+  "Q4App.profile.Tablet": [],
   "Q4App.store.Company": [],
   "Q4App.store.Event": [],
   "Q4App.store.Favorite": [],
@@ -764,7 +772,12 @@ Ext.ClassManager.addNameAlternateMappings({
   "Q4App.view.Home": [],
   "Q4App.view.Main": [],
   "Q4App.view.Navigation": [],
-  "Q4App.view.Overview": []
+  "Q4App.view.Overview": [],
+  "Q4App.view.phone.Main": [],
+  "Q4App.view.phone.Menu": [],
+  "Q4App.view.phone.Overview": [],
+  "Q4App.view.tablet.Main": [],
+  "Q4App.view.tablet.Overview": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Ext.AbstractComponent": [],
@@ -1711,12 +1724,20 @@ Ext.ClassManager.addNameAliasMappings({
   "Q4App.controller.Home": [],
   "Q4App.controller.Main": [],
   "Q4App.controller.Overview": [],
+  "Q4App.controller.phone.Home": [],
+  "Q4App.controller.phone.Main": [],
+  "Q4App.controller.phone.Overview": [],
+  "Q4App.controller.tablet.Home": [],
+  "Q4App.controller.tablet.Main": [],
+  "Q4App.controller.tablet.Overview": [],
   "Q4App.model.Company": [],
   "Q4App.model.Event": [],
   "Q4App.model.Mash": [],
   "Q4App.model.Presentation": [],
   "Q4App.model.PressRelease": [],
   "Q4App.model.Stock": [],
+  "Q4App.profile.Phone": [],
+  "Q4App.profile.Tablet": [],
   "Q4App.store.Company": [],
   "Q4App.store.Event": [],
   "Q4App.store.Favorite": [],
@@ -1731,13 +1752,26 @@ Ext.ClassManager.addNameAliasMappings({
   "Q4App.view.Home": [
     "widget.home"
   ],
-  "Q4App.view.Main": [
-    "widget.main"
-  ],
+  "Q4App.view.Main": [],
   "Q4App.view.Navigation": [
     "widget.navigation"
   ],
   "Q4App.view.Overview": [
+    "widget.overview"
+  ],
+  "Q4App.view.phone.Main": [
+    "widget.main"
+  ],
+  "Q4App.view.phone.Menu": [
+    "widget.mainmenu"
+  ],
+  "Q4App.view.phone.Overview": [
+    "widget.overview"
+  ],
+  "Q4App.view.tablet.Main": [
+    "widget.main"
+  ],
+  "Q4App.view.tablet.Overview": [
     "widget.overview"
   ]
 });

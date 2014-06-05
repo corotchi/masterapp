@@ -1,0 +1,130 @@
+{
+  "version": "3.4.1",
+  "domain": [
+    "http://investor.darden.com",
+    "http://darden.q4web.com"
+  ],
+  "siteMap": [
+    {
+      "title": "Investor FAQs",
+      "tag": "faq",
+      "type": "content"
+    },
+    {
+      "title": "Financial Information",
+      "tag": "external",
+      "url": "http://investor.darden.com/investors/financial-information/default.aspx",
+      "type": "external"
+    },
+    {
+      "title": "Safe Harbor Notice",
+      "tag": "safe",
+      "type": "content"
+    },
+    {
+      "title": "Contact Us",
+      "tag": "contact",
+      "type": "content"
+    }
+  ],
+  "annualReports": true,
+  "quarterlyEarnings": true,
+  "supplementalReports": true,
+  "presentations": true,
+  "secFilings": true,
+  "docuemntCategoryName": [],
+  "chartTheme": {
+    "tooltip": {
+      "followTouchMove": true,
+      "followPointer": true
+    },
+    "navigator": {
+      "series": {
+        "color": "#231f20",
+        "lineWidth": 0
+      }
+    },
+    "colors": [
+      "#231f20"
+    ],
+    "chart": {
+      "pinchType": "none",
+      "zoomType": "none"
+    }
+  },
+  "menuItems": [
+    {
+      "label": "Home",
+      "titleId": "Home",
+      "enable": true
+    },
+    {
+      "label": "Press Releases",
+      "titleId": "Press Releases",
+      "enable": true
+    },
+    {
+      "label": "Document Center",
+      "titleId": "Document Center",
+      "enable": true
+    },
+    {
+      "label": "Financial Reports",
+      "titleId": "Financial Reports",
+      "enable": true
+    },
+    {
+      "label": "Stock Information",
+      "titleId": "Stock Information",
+      "enable": true
+    },
+    {
+      "label": "Events Calendar",
+      "titleId": "Events Calendar",
+      "enable": true
+    }
+  ],
+  "eventMapLink": true,
+  "chartVolume": true,
+  "magazineChart": true,
+  "addPage": true,
+  "shortBodyThumbnails": true,
+  "live": true,
+  "__v": 0,
+  "_id": "534d9f4629e9fa02001de4fc",
+  "apiKey": "C1AD4137C6D7490DA08E1EBBC316CA0E",
+  "clientLogo": "http://darden.q4web.com/files/images/mobile/logoLanding.png",
+  "desktopSiteURL": "",
+  "latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+  "shortName": "darden",
+  "siteUrl": "http://investor.darden.com",
+  "splashLogo": "http://darden.q4web.com/files/images/mobile/logoSplash.png",
+  "title": "Darden Restaurants Inc.",
+  "docuemntCategory": [
+    {
+      "name": "Red Lobster SEC"
+    },
+    {
+      "name": "Corporate Governance"
+    },
+    {
+      "name": "Non-GAAP Reporting"
+    },
+    {
+      "name": "Other"
+    }
+  ],
+  "pageSize": 28,
+  "sec": {
+    "exchange": "NYSE",
+    "symbol": "DRI"
+  },
+  "getGoogleAnalytics": {
+    "account": "UA-31604204-1",
+    "domain": "darden.com"
+  },
+  "stock": {
+    "exchange": "NYSE",
+    "symbol": "DRI"
+  }
+}

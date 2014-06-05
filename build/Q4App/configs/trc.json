@@ -1,0 +1,104 @@
+{
+"apiKey": "FC84F1EFDE4D44A296190386668722B6",
+
+"getGoogleAnalytics" : {
+	"account": "UA-46476395-1",
+	"domain": "http://trc.q4web.com"
+},
+
+"clientLogo": "http://trc.q4web.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#005e94"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#005e94"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://trc.q4web.com",
+	
+	"decktopSiteURL": "http://investors.trcsolutions.com",
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "TRR"
+	},
+	
+	"sec": {
+		"exchange": "CIK",
+		"symbol"  : "0000103096"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://trc.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "TRC Companies Inc.",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Financial Reports",
+        "titleId": "Financial Reports",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+        },
+
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+    ],
+
+
+
+}

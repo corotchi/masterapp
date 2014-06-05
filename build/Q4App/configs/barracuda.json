@@ -1,0 +1,104 @@
+{
+"apiKey": "EFA4D75E27234E2DBF6AA368F86BA322",
+
+"getGoogleAnalytics" : {
+	"account": "UA-45416106-1",
+	"domain": "q4web.com"
+},
+
+"clientLogo": "http://barracuda.q4web.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#186097"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#186097"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://barracuda.q4web.com",
+	
+	"decktopSiteURL": "http://investors.barracuda.com",
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "CUDA"
+	},
+	
+	"sec": {
+		"exchange": "CIK",
+		"symbol"  : "0001348334"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://barracuda.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "Barracuda Networks",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Financial Reports",
+        "titleId": "Financial Reports",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+        },
+
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+    ],
+
+
+
+}

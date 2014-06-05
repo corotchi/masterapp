@@ -1,0 +1,98 @@
+{
+"apiKey": "946E75CC668D48628B2437769B526C71",
+
+"getGoogleAnalytics" : {
+	"account": "UA-28420521-4",
+	"domain": "q4inc.com"
+},
+
+"clientLogo": "http://newmont.q4web.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#01065A"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#01065A"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://newmont.q4web.com",
+	
+	
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "NEM"
+	},
+	
+	"sec": {
+		"exchange": "NYSE",
+		"symbol"  : "NEM"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://newmont.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "Newmont",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Financial Reports",
+        "titleId": "Financial Reports",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+    ],
+
+
+
+}

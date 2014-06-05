@@ -1,0 +1,98 @@
+{
+"apiKey": "A348424181654971BCAE312B8DD0F957",
+
+"getGoogleAnalytics" : {
+	"account": "UA-28420521-4",
+	"domain": "q4inc.com"
+},
+
+"clientLogo": "http://juniper.q4web.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#536F85"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#536F85"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://juniper.q4web.com",
+	
+	
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "JNPR"
+	},
+	
+	"sec": {
+		"exchange": "NYSE",
+		"symbol"  : "JNPR"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://juniper.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "Juniper Networks",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Financial Reports",
+        "titleId": "Financial Reports",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+    ],
+
+
+
+}

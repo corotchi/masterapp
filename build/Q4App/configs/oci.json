@@ -1,0 +1,104 @@
+{
+"apiKey": "4367788C5D95422BA4DFCEDF3CB2D29A",
+
+"getGoogleAnalytics" : {
+	"account": "UA-28420521-4",
+	"domain": "q4inc.com"
+},
+
+"clientLogo": "http://oci.q4web.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#E31F30"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#E31F30"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://oci.q4web.com",
+	
+	"decktopSiteURL": "http://www.ociresources.com",
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "OCIR"
+	},
+	
+	"sec": {
+		"exchange": "CIK",
+		"symbol"  : "0001575051"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://oci.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "OCI",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Financial Reports",
+        "titleId": "Financial Reports",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+        },
+
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+    ],
+
+
+
+}

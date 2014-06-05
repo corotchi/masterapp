@@ -1,0 +1,11 @@
+{
+	"apiKey"    : "7729154D70044914ADEEEE9A4D8CD004",
+	"clientLogo": "http://ir.shfl.com/files/images/mobile/logo.png",
+	"siteUrl"   : "http://www.barrick.com",
+	"title"     : "Barrick Gold",
+	"stock"     : {
+		"exchange": "NYSE",
+		"symbol"  : "ABX"
+	},
+	"pageSize": 25
+}

@@ -1,0 +1,104 @@
+{
+"apiKey": "79B1346BBE81478BB93105203523889E",
+
+"getGoogleAnalytics" : {
+	"account": "UA-28420521-4",
+	"domain": "q4inc.com"
+},
+
+"clientLogo": "http://intuit.q4web.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#365ebf"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#365ebf"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://intuit.q4web.com",
+	
+	"decktopSiteURL": "http://investors.intuit.com",
+	
+	"stock": {
+		"exchange": "NASD",
+		"symbol"  : "INTU"
+	},
+	
+	"sec": {
+		"exchange": "NasdaqGlobal",
+		"symbol"  : "INTU"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://intuit.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "Intuit",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Financial Reports",
+        "titleId": "Financial Reports",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+        },
+
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+    ],
+
+
+
+}

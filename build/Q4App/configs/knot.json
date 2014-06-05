@@ -1,0 +1,93 @@
+{
+"apiKey": "ACAB4171A35B404C930274D083511B7D",
+
+"getGoogleAnalytics" : {
+	"account": "UA-39994855-1",
+	"domain": "knotoffshorepartners.com"
+},
+
+"clientLogo": "http://ir.knotoffshorepartners.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#020864"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#020864"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://ir.knotoffshorepartners.com",
+	
+	
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "KNOP"
+	},
+	
+	"sec": {
+		"exchange": "NYSE",
+		"symbol"  : "KNOP"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://ir.knotoffshorepartners.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "KNOT Offshore Partners LP",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+    ],
+
+
+
+}

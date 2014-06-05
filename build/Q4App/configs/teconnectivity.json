@@ -1,0 +1,69 @@
+{
+"apiKey": "D121EEDB837F44248969C764E67402ED",
+
+"getGoogleAnalytics" : {
+	"account": "missing value",
+	"domain": "q4web.com"
+},
+
+"clientLogo": "http://teconnectivity.q4web.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#0173af"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#0173af"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://teconnectivity.q4web.com",
+	
+	"decktopSiteURL": "missing value",
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "TEL"
+	},
+	
+	"sec": {
+		"exchange": "CIK",
+		"symbol"  : "0001385157"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://teconnectivity.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+	
+	"siteMap": 
+	[
+    {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+    },
+
+    {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+    },
+    ],
+
+
+
+		
+	"title"     : "TE Connectivity",
+	
+	"shortBodyThumbnails": true
+}

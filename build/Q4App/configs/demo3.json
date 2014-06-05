@@ -1,0 +1,79 @@
+{
+"apiKey": "15ACDB7DC9BF402C853779B3477F912D",
+
+"getGoogleAnalytics" : {
+	"account": "UA-28420521-4",
+	"domain": "q4web.com"
+},
+
+"clientLogo": "http://demo3.q4web.com/files/images/milling-flowsheet.gif",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#536ba8"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#536ba8"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://demo3.q4web.com",
+	
+	"stock": {
+		"exchange": "NASD",
+		"symbol"  : "CYTX"
+	},
+	
+	"sec": {
+		"exchange": "NasdaqGlobal",
+		"symbol"  : "CYTX"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://demo3.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"fullSiteURL": "fullSiteUrl: 'missing value',",
+	
+	"pageSize": 28,
+	
+	"siteMap": 
+	[
+    {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+    },
+
+    {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+    },
+    ],
+
+    "docuemntCategory": 
+    [
+    {
+        "name": "General"
+    },
+    ],
+
+		
+	"title"     : "Demo3",
+	
+	"shortBodyThumbnails": true,
+
+	"eventMapLink": true,
+
+
+	
+}

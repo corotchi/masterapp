@@ -1,0 +1,111 @@
+{
+"apiKey": "1BE56EE8DEA942F6B419D6CF9503F155",
+
+"getGoogleAnalytics" : {
+	"account": "UA-28420521-4",
+	"domain": "q4inc.com"
+},
+
+"clientLogo": "http://jonesenergy.q4web.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#1C7CA4"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#1C7CA4"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://jonesenergy.q4web.com",
+	
+	"decktopSiteURL": "http://investors.jonesenergy.com/investors/default.aspx",
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "JONE"
+	},
+	
+	"sec": {
+		"exchange": "NYSE",
+		"symbol"  : "JONE"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://jonesenergy.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "Jones Energy",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Financial Reports",
+        "titleId": "Financial Reports",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "Corporate Governance",
+        "tag": "external",
+        "url": "http://investors.jonesenergy.com/investors/corporate-governance/management/default.aspx",
+        "type": "external"
+        },
+
+        {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+        },
+
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+    ],
+
+
+
+}

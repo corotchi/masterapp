@@ -1,0 +1,104 @@
+{
+"apiKey": "46ECCF06B72A49DD8B0FF98ABBED0024",
+
+"getGoogleAnalytics" : {
+	"account": "UA-45669394-1",
+	"domain": "q4web.com"
+},
+
+"clientLogo": "http://chegg.q4web.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#186097"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#186097"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://chegg.q4web.com",
+	
+	"decktopSiteURL": "http://investor.chegg.com/",
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "CHGG"
+	},
+	
+	"sec": {
+		"exchange": "CIK",
+		"symbol"  : "0001364954"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://chegg.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "Chegg Inc.",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+        },
+
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+    ],
+
+    "docuemntCategory": 
+    [
+         {
+        "name": "Governance Documents"
+         },
+    ],
+
+}

@@ -1,0 +1,69 @@
+{
+"apiKey": "B69069849B454A8B8C819C59306C7B33",
+
+"getGoogleAnalytics" : {
+	"account": " must get the analytics from CMS ",
+	"domain": "erosintl.q4web.com/"
+},
+
+"clientLogo": "http://erosintl.q4web.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#00335b"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#00335b"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://erosintl.q4web.com/",
+	
+	"decktopSiteURL": "missing value",
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "EROS"
+	},
+	
+	"sec": {
+		"exchange": "CIK",
+		"symbol"  : "0001532981"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://erosintl.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+	
+	"siteMap": 
+	[
+    {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+    },
+
+    {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+    },
+    ],
+
+
+
+		
+	"title"     : "Eros International",
+	
+	"shortBodyThumbnails": true
+}

@@ -1,0 +1,110 @@
+{
+"apiKey": "03AFA5A57DA844D69CFFC73E4381C2CC",
+
+"getGoogleAnalytics" : {
+	"account": "UA-1135362-1",
+	"domain": "assurant-int.q4web.com"
+},
+
+"clientLogo": "http://assurant-int.q4web.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#0066CC"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#0066CC"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://assurant-int.q4web.com",
+	
+	
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "AIZ"
+	},
+	
+	"sec": {
+		"exchange": "CIK",
+		"symbol"  : "0001267238"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://assurant-int.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "Assurant",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Financial Reports",
+        "titleId": "Financial Reports",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "FAQs",
+        "tag": "faq",
+        "type": "content"
+        },
+
+        {
+        "title": "Contact IR",
+        "tag": "contact",
+        "type": "content"
+        },
+
+        {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+        },
+    ],
+
+
+
+}

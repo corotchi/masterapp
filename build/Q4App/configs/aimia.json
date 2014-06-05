@@ -1,0 +1,119 @@
+{
+  "version": "3.4.1",
+  "versionStaging": "3.4.1",
+  "domain": [],
+  "siteMap": [
+    {
+      "title": "Sedar Filings",
+      "tag": "external",
+      "url": "http://www.sedar.com/DisplayCompanyDocuments.do?lang=EN&issuerNo=00027127",
+      "type": "external"
+    },
+    {
+      "title": "New Thinking",
+      "tag": "external",
+      "url": "http://www.aimia.com/en/new-thinking/library.html",
+      "type": "external"
+    },
+    {
+      "title": "Contact Us",
+      "tag": "contact",
+      "type": "content"
+    }
+  ],
+  "annualReports": true,
+  "quarterlyEarnings": true,
+  "supplementalReports": true,
+  "presentations": true,
+  "secFilings": true,
+  "docuemntCategoryName": [],
+  "chartTheme": {
+    "tooltip": {
+      "followTouchMove": true,
+      "followPointer": true
+    },
+    "navigator": {
+      "series": {
+        "color": "#A1549B",
+        "lineWidth": 0
+      }
+    },
+    "colors": [
+      "#A1549B"
+    ],
+    "chart": {
+      "pinchType": "none",
+      "zoomType": "none"
+    }
+  },
+  "menuItems": [
+    {
+      "label": "Home",
+      "titleId": "Home",
+      "enable": true
+    },
+    {
+      "label": "Press Releases",
+      "titleId": "Press Releases",
+      "enable": true
+    },
+    {
+      "label": "Blogs",
+      "titleId": "Blogs",
+      "enable": true
+    },
+    {
+      "label": "Document Center",
+      "titleId": "Document Center",
+      "enable": true
+    },
+    {
+      "label": "Financial Reports",
+      "titleId": "Financial Reports",
+      "enable": true
+    },
+    {
+      "label": "Stock Information",
+      "titleId": "Stock Information",
+      "enable": true
+    },
+    {
+      "label": "Events Calendar",
+      "titleId": "Events Calendar",
+      "enable": true
+    }
+  ],
+  "eventMapLink": true,
+  "chartVolume": true,
+  "magazineChart": true,
+  "addPage": true,
+  "shortBodyThumbnails": true,
+  "q4client": true,
+  "live": false,
+  "__v": 0,
+  "_id": "5363d410447ba73007315c8a",
+  "apiKey": "5218695215A3417B9F18AB95A11D48A0",
+  "clientLogo": "http://aimia.q4web.com/files/images/mobile/logoLanding.png",
+  "latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+  "shortName": "tester",
+  "siteUrl": "http://aimia.q4web.com",
+  "splashLogo": "http://aimia.q4web.com/files/images/mobile/logoSplash.png",
+  "title": "Aimia",
+  "docuemntCategory": [],
+  "pageSize": 28,
+  "rss": {
+    "url": "http://www.q4blog.com/feed/"
+  },
+  "sec": {
+    "exchange": "missing value",
+    "symbol": "missing value"
+  },
+  "getGoogleAnalytics": {
+    "account": "UA-26528528-1",
+    "domain": "aimia.com"
+  },
+  "stock": {
+    "exchange": "TSE",
+    "symbol": "AIM.CA"
+  }
+}

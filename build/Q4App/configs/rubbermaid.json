@@ -1,0 +1,104 @@
+{
+"apiKey": "7C4877B7DA244F81BEF77D6E6FB864EA",
+
+"getGoogleAnalytics" : {
+	"account": "UA-35964030-1",
+	"domain": "newellrubbermaid.com"
+},
+
+"clientLogo": "http://ir.newellrubbermaid.com/files/images/mobile/minilogo.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#3B1B5A"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#3B1B5A"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://ir.newellrubbermaid.com",
+	
+	
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "NWL"
+	},
+	
+	"sec": {
+		"exchange": "NYSE",
+		"symbol"  : "NWL"
+	},
+	
+	"latestReportCategory": "Annual Report",
+	
+	"splashLogo": "http://ir.newellrubbermaid.com/files/images/mobile/logo.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "Newell Rubbermaid",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Financial Reports",
+        "titleId": "Financial Reports",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+        },
+
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+    ],
+
+
+
+}

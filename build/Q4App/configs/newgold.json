@@ -1,0 +1,98 @@
+{
+"apiKey": "82698266EDB5441F9D2CBDE1298B5BC6",
+
+"getGoogleAnalytics" : {
+	"account": "UA-28420521-4",
+	"domain": "http://newgold.q4web.com"
+},
+
+"clientLogo": "http://www.newgold.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#BCA76D"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#BCA76D"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://www.newgold.com",
+	
+	
+	
+	"stock": {
+		"exchange": "TSE",
+		"symbol"  : "NGD.CA"
+	},
+	
+	"sec": {
+		"exchange": "missing value",
+		"symbol"  : "missing value"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://www.newgold.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "New Gold",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Financial Reports",
+        "titleId": "Financial Reports",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+    ],
+
+
+
+}

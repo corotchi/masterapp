@@ -1,0 +1,104 @@
+{
+"apiKey": "5A3B3D6BFF4A451FBFF5052AD3692CA7",
+
+"getGoogleAnalytics" : {
+	"account": "UA-46538628-1",
+	"domain": "uscellular.com"
+},
+
+"clientLogo": "http://usc.q4web.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#0065A4"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#0065A4"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://investors.uscellular.com",
+	
+	"decktopSiteURL": "http://investors.uscellular.com",
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "USM"
+	},
+	
+	"sec": {
+		"exchange": "CIK",
+		"symbol"  : "0000821130"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://usc.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "US Cellular",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Financial Reports",
+        "titleId": "Financial Reports",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+        },
+
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+    ],
+
+
+
+}

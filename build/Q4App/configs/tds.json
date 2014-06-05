@@ -1,0 +1,104 @@
+{
+"apiKey": "E206712E7B2841B3BCDC85EC98895C0A",
+
+"getGoogleAnalytics" : {
+	"account": "UA-46637636-1",
+	"domain": "http://tds.q4web.com"
+},
+
+"clientLogo": "http://tds.q4web.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#a3d063"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#a3d063"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://investors.teldta.com/",
+	
+	"decktopSiteURL": "http://investors.teldta.com/",
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "TDS"
+	},
+	
+	"sec": {
+		"exchange": "CIK",
+		"symbol"  : "0001051512"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://tds.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "Telephone and Data Systems",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Financial Reports",
+        "titleId": "Financial Reports",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+
+        {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+        },
+    ],
+
+
+
+}

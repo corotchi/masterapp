@@ -1,0 +1,75 @@
+{
+	"apiKey": "20D97967AF314A7AB835D7D6E6407EBA",
+
+	"getGoogleAnalytics" : {
+		"account": "UA-47117065-1",
+		"domain": "q4web.com"
+	},
+
+	"clientLogo": "http://acorda.q4web.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#28afde"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#28afde"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://acorda.q4web.com",
+	
+	"decktopSiteURL": "missing value",
+	
+	"stock": {
+		"exchange": "NASD",
+		"symbol"  : "ACOR"
+	},
+	
+	"sec": {
+		"exchange": "CIK",
+		"symbol"  : "0001008848"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://acorda.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+	
+	"siteMap": 
+	[
+    {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+    },
+
+    {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+    },
+    ],
+
+    "financialCategory":{
+		"AnnualReports":true,
+		"QuarterlyEarnings":true,
+		"SupplementalReports":true,
+    	"Presentations":true,
+    	"SECFilings":true
+    },
+
+		
+	"title"     : "Acorda Therapeutics",
+	
+	"shortBodyThumbnails": true
+}

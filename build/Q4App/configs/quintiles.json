@@ -1,0 +1,69 @@
+{
+"apiKey": "ACFFF1FF2E77499AA48B874A3F23B072",
+
+"getGoogleAnalytics" : {
+	"account": "UA-28420521-4",
+	"domain": "q4inc.com"
+},
+
+"clientLogo": "http://investors.quintiles.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#27878c"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#27878c"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://quintiles.q4web.com",
+	
+	"decktopSiteURL": "http://investors.quintiles.com",
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "Q"
+	},
+	
+	"sec": {
+		"exchange": "NYSE",
+		"symbol"  : "Q"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://investors.quintiles.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+	
+	"siteMap": 
+	[
+    {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+    },
+
+    {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+    },
+    ],
+
+
+
+		
+	"title"     : "Quintiles",
+	
+	"shortBodyThumbnails": true
+}

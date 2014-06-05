@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html manifest="" lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+         /**
+         * Example of an initial loading indicator.
+         * It is recommended to keep this as minimal as possible to provide instant feedback
+         * while other resources are still being loaded for the first time
+         */
+        html, body {
+            height: 100%;
+            background-color: #fff;
+        }
+
+        #appLoadingIndicator {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            text-align: center;
+            width: 100%;
+            height: 30px;
+        }
+
+
+        .spinner {
+           height:40px;
+           width:40px;
+           margin:0px auto;
+           position:relative;
+           -webkit-animation: rotation .6s infinite linear;
+           -moz-animation: rotation .6s infinite linear;
+           -o-animation: rotation .6s infinite linear;
+           animation: rotation .6s infinite linear;
+           border-left:4px solid rgba(125,125,125,.15);
+           border-right:4px solid rgba(125,125,125,.15);
+           border-bottom:4px solid rgba(125,174,125,.15);
+           border-top:4px solid rgba(125,125,125,.8);
+           border-radius:100%;
+        }
+
+        @-webkit-keyframes rotation {
+           from {-webkit-transform: rotate(0deg);}
+           to {-webkit-transform: rotate(359deg);}
+        }
+        @-moz-keyframes rotation {
+           from {-moz-transform: rotate(0deg);}
+           to {-moz-transform: rotate(359deg);}
+        }
+        @-o-keyframes rotation {
+           from {-o-transform: rotate(0deg);}
+           to {-o-transform: rotate(359deg);}
+        }
+        @keyframes rotation {
+           from {transform: rotate(0deg);}
+           to {transform: rotate(359deg);}
+        }
+
+    </style>
+
+    <!-- The line below must be kept intact for Sencha Command to build your application -->
+    <script type="text/javascript">(function(global){var head=global.document.head||global.document.getElementsByTagName("head")[0],Ext=global.Ext;if(typeof Ext=="undefined"){global.Ext=Ext={}}function write(content){document.write(content)}function addMeta(name,content){var meta=document.createElement("meta");meta.setAttribute("name",name);meta.setAttribute("content",content);head.appendChild(meta)}Ext.blink=function(options){var scripts=options.js||[],styleSheets=options.css||[],i,ln,path,platform,theme,exclude;if(navigator.userAgent.match(/IEMobile\/10\.0/)){var msViewportStyle=document.createElement("style");msViewportStyle.appendChild(document.createTextNode("@media screen and (orientation: portrait) {@-ms-viewport {width: 320px !important;}}@media screen and (orientation: landscape) {@-ms-viewport {width: 560px !important;}}"));document.getElementsByTagName("head")[0].appendChild(msViewportStyle)}addMeta("viewport","width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no");addMeta("apple-mobile-web-app-capable","yes");addMeta("apple-touch-fullscreen","yes");Ext.microloaded=true;var filterPlatform=window.Ext.filterPlatform=function(platform){var profileMatch=false,ua=navigator.userAgent,j,jln;platform=[].concat(platform);function isPhone(ua){var isMobile=/Mobile(\/|\s)/.test(ua);return/(iPhone|iPod)/.test(ua)||(!/(Silk)/.test(ua)&&(/(Android)/.test(ua)&&(/(Android 2)/.test(ua)||isMobile)))||(/(BlackBerry|BB)/.test(ua)&&isMobile)||/(Windows Phone)/.test(ua)}function isTablet(ua){return !isPhone(ua)&&(/iPad/.test(ua)||/Android|Silk/.test(ua)||/(RIM Tablet OS)/.test(ua)||(/MSIE 10/.test(ua)&&/; Touch/.test(ua)))}var paramsString=window.location.search.substr(1),paramsArray=paramsString.split("&"),params={},testPlatform,i;for(i=0;i<paramsArray.length;i++){var tmpArray=paramsArray[i].split("=");params[tmpArray[0]]=tmpArray[1]}testPlatform=params.platform;if(testPlatform){return platform.indexOf(testPlatform)!=-1}for(j=0,jln=platform.length;j<jln;j++){switch(platform[j]){case"phone":profileMatch=isPhone(ua);break;case"tablet":profileMatch=isTablet(ua);break;case"desktop":profileMatch=!isPhone(ua)&&!isTablet(ua);break;case"ios":profileMatch=/(iPad|iPhone|iPod)/.test(ua);break;case"android":profileMatch=/(Android|Silk)/.test(ua);break;case"blackberry":profileMatch=/(BlackBerry|BB)/.test(ua);break;case"safari":profileMatch=/Safari/.test(ua)&&!(/(BlackBerry|BB)/.test(ua));break;case"chrome":profileMatch=/Chrome/.test(ua);break;case"ie10":profileMatch=/MSIE 10/.test(ua);break;case"windows":profileMatch=/MSIE 10/.test(ua)||/Trident/.test(ua);break;case"tizen":profileMatch=/Tizen/.test(ua);break;case"firefox":profileMatch=/Firefox/.test(ua)}if(profileMatch){return true}}return false};var filterProject=function(project){var paramsString=window.location.search.substr(1),paramsArray=paramsString.split("&"),params={},i;for(i=0;i<paramsArray.length;i++){var tmpArray=paramsArray[i].split("=");params[tmpArray[0]]=tmpArray[1]}window.Q4Project={};window.Q4Config={};var Q4Ajax=new XMLHttpRequest();Q4Ajax.open("GET","http://q4app.com/api/q4name?domain=http://"+project,false);Q4Ajax.send(null);var Q4Project=eval("("+Q4Ajax.responseText+")");var projectName;if(!Q4Project.error){projectName=Q4Project.shortName}else{projectName=params.project}var Q4json=new XMLHttpRequest();Q4json.open("GET","https://s3.amazonaws.com/q4mobile/config/"+projectName+".json",false);Q4json.send(null);Q4Config=eval("("+Q4json.responseText+")");write('<link rel="stylesheet" href="https://s3.amazonaws.com/q4mobile/css/'+projectName+'.css">');return true};filterProject(window.location.hostname);for(i=0,ln=styleSheets.length;i<ln;i++){path=styleSheets[i];if(typeof path!=="string"){platform=path.platform;exclude=path.exclude;theme=path.theme;path=path.path}if(platform){if(!filterPlatform(platform)||filterPlatform(exclude)){continue}if(!Ext.theme){Ext.theme={}}if(!Ext.theme.name){Ext.theme.name=theme||"Default"}}}for(i=0,ln=scripts.length;i<ln;i++){path=scripts[i];if(typeof path!="string"){platform=path.platform;exclude=path.exclude;path=path.path}if(platform){if(!filterPlatform(platform)||filterPlatform(exclude)){continue}}write('<script src="'+path+'"><\/script>')}}})(this);Ext.blink({id:"a1254ef6-43a2-420d-8d02-f3be1bfc305a",js:[{path:"app.js",update:"delta"},{path:"resources/js/HighchartsAdapter.js"},{path:"resources/js/highstock.js"}],css:[{path:"resources/css/q4Themes/app.css",update:"delta"}]});</script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];        if( typeof Q4Config.getGoogleAnalytics != 'undefined' ) {
+            _gaq.push(['_setAccount', Q4Config.getGoogleAnalytics.account]);
+            _gaq.push(['_setDomainName', Q4Config.getGoogleAnalytics.domain]);
+            _gaq.push(['_setAllowLinker', true]);
+            _gaq.push(['_trackPageview']);
+
+            _gaq.push(['b._setAccount', 'UA-28420521-4']);
+            _gaq.push(['b._setDomainName', Q4Config.getGoogleAnalytics.domain]);
+            _gaq.push(['b._trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        }
+    </script>
+</head>
+<body>
+    <div id="appLoadingIndicator">
+      <div class="spinner"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

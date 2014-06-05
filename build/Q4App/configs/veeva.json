@@ -1,0 +1,104 @@
+{
+"apiKey": "538198A53F3E4D159789CD9B58CA36A0",
+
+"getGoogleAnalytics" : {
+	"account": "UA-44896178-1",
+	"domain": "q4web.com"
+},
+
+"clientLogo": "http://veeva.q4web.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#f89728"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#f89728"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://veeva.q4web.com",
+	
+	"decktopSiteURL": "http://ir.veeva.com",
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "VEEV"
+	},
+	
+	"sec": {
+		"exchange": "CIK",
+		"symbol"  : "0001393052"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://veeva.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "Veeva Systems",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Financial Reports",
+        "titleId": "Financial Reports",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+        },
+
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+    ],
+
+
+
+}

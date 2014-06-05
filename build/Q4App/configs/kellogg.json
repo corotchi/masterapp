@@ -1,0 +1,100 @@
+{
+"apiKey": "DB0328D0FED14D978DEB3D4C3AE3A75B",
+
+"getGoogleAnalytics" : {
+	"account": "UA-35531275-1",
+	"domain": "kelloggs.com"
+},
+
+"clientLogo": "http://investor.kelloggs.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#363636"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#363636"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://investor.kelloggs.com",
+	
+	
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "K"
+	},
+	
+	"sec": {
+		"exchange": "NYSE",
+		"symbol"  : "K"
+	},
+	
+	"latestReportCategory": "Annual Report",
+	
+	"splashLogo": "http://investor.kelloggs.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "Kellogg Company",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+        },
+
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+    ],
+
+
+
+}

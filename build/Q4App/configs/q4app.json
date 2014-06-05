@@ -1,0 +1,130 @@
+{
+	/** 
+	 * API key used for Q4 feed
+	 * required : true
+	**/
+	"apiKey"    : "D84F7658E83642BDA05FBDD61312906E",
+	
+	/** 
+	 * Google analytics account info
+	 * required : true
+	**/
+	"getGoogleAnalytics" : {
+		"account": "UA-26969861-1",
+		"domain": "http://q4setup.herokuapp.com"
+	} ,
+	
+	/** 
+	 * image path for the client logo in top toolbar
+	 * required : true
+	**/
+	"clientLogo": "http://ice.q4web.com/files/images/mobile/logoLanding.png",
+	
+	/** 
+	 * chart customization
+	 * used on char and in magazine view
+	 * required : false
+	**/
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#004468"],
+		"navigator": {
+			"series": {
+			"lineWidth": 0,
+    			"color": "#004468"
+			}
+		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+
+	/** 
+	 * Ex: {name: 'Category Name'}
+	 * Document Center additional categories
+	 * required : false
+	**/
+	"docuemntCategory": [
+    	{"name": "AMF FiIings"},
+    	{"name": "Supplement Information"},
+    	{"name": "Governance Documents"}
+    ],
+
+	/**
+	 * Filter Financial reports category 
+	 * required : false
+	**/
+	"latestReportCategory": "First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+
+	/**
+	 * Main site url 
+	 * Source of Q4 feeds
+	 * required : true
+	*/
+	"siteUrl"   : "http://ice.q4web.com",
+
+	/**
+	 * Stock Sybol and exnage
+	 * Used for chart and stock quotes
+	 * required: true
+	**/
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "ICE"
+	},
+	
+	/*
+	 * Logo Path for splash intro image
+	 * required: false
+	*/
+	"splashLogo": "http://ice.q4web.com/files/images/mobile/logoSplash.png",
+	
+	/*
+	 * Page size for global feeds
+	 * required: true
+	*/
+	"pageSize": 25,
+
+	/*
+	 * Additional pages for the app
+	 * required: false
+	*/
+	"siteMap": [
+    	{
+	        "title": "Analyst Coverage",
+	        "tag": "analyst",
+	        "type": "content"
+	    },
+	    {
+	        "title": "Contact Us",
+	        "tag": "contact",
+	        "type": "content"
+	    },
+
+	    {
+	        "title": "Disclaimer",
+	        "tag": "legal",
+	        "type": "content"
+	    }
+    ],
+
+    /*
+	 * App title
+	 * Usef to tab title and Stock name
+	 * required: true
+	*/
+	"title"     : "IntercontinentalExchange",
+
+	/*
+	 * disable/enable images for short desrition news content type
+	 * required: false
+	*/
+	"shortBodyThumbnails": true,
+
+	"decktopSiteText": "Full Site"
+
+}

@@ -1,0 +1,88 @@
+{
+"apiKey": "D5961F65996A41A09A98F07AC734F7DE",
+
+"getGoogleAnalytics" : {
+	"account": "UA-4591053-47",
+	"domain": "romarco.com"
+},
+
+"clientLogo": "http://www.romarco.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#4c7275"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#4c7275"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://www.romarco.com",
+	
+	"decktopSiteURL": "http://www.romarco.com",
+	
+	"stock": {
+		"exchange": "TSE",
+		"symbol"  : "R.CA"
+	},
+	
+	"sec": {
+		"exchange": "missing value",
+		"symbol"  : "missing value"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://www.romarco.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+	
+	"siteMap": 
+	[
+    {
+        "title": "Our Projects",
+        "tag": "projectsapp",
+        "type": "content"
+    },
+
+    {
+        "title": "SEDAR Filings",
+        "tag": "external",
+        "url": "http://sedar.com/DisplayProfile.do?lang=EN&issuerType=03&issuerNo=00002257&LanguageId=1",
+        "type": "external"
+    },
+
+    {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+    },
+
+    {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+    },
+    ],
+
+    "docuemntCategory": 
+    [
+    {
+        "name": "Technical Reports"
+    },
+    ],
+
+    "addPage": true,
+		
+	"title"     : "Romarco Minerals",
+	
+	"shortBodyThumbnails": true
+}

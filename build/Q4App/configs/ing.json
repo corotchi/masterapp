@@ -1,0 +1,116 @@
+{
+"apiKey": "464A9133499340FFBB763C88E22E157F",
+
+"getGoogleAnalytics" : {
+	"account": "UA-42185032-1",
+	"domain": "ing.us"
+},
+
+"clientLogo": "http://investors.ing.us/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#9a9c9b"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#9a9c9b"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://investors.ing.us",
+	
+	
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "VOYA"
+	},
+	
+	"sec": {
+		"exchange": "NYSE",
+		"symbol"  : "VOYA"
+	},
+	
+	"latestReportCategory": "First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://investors.ing.us/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "ING U.S.",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Financial Reports",
+        "titleId": "Financial Reports",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "Why ING U.S.",
+        "tag": "whyinvest",
+        "type": "content"
+        },
+
+        {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+        },
+
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+
+        {
+        "title": "Legal",
+        "tag": "legal",
+        "type": "content"
+        },
+    ],
+
+
+
+}

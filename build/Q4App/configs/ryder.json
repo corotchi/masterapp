@@ -1,0 +1,121 @@
+{
+  "version": "3.4.1",
+  "versionStaging": "3.5.1",
+  "domain": [
+    "http://investors.ryder.com",
+    "http://ryder.q4web.com"
+  ],
+  "siteMap": [
+    {
+      "type": "content",
+      "tag": "analyst",
+      "title": "Analyst Coverage"
+    },
+    {
+      "type": "content",
+      "tag": "eventreg",
+      "title": "Event Registration"
+    },
+    {
+      "type": "content",
+      "tag": "contact",
+      "title": "Contact Us"
+    }
+  ],
+  "annualReports": true,
+  "quarterlyEarnings": true,
+  "supplementalReports": true,
+  "presentations": true,
+  "secFilings": true,
+  "docuemntCategoryName": [],
+  "chartTheme": {
+    "tooltip": {
+      "followTouchMove": true,
+      "followPointer": true
+    },
+    "navigator": {
+      "series": {
+        "color": "#000000",
+        "lineWidth": 0
+      }
+    },
+    "colors": [
+      "#000000"
+    ],
+    "chart": {
+      "pinchType": "none",
+      "zoomType": "none"
+    }
+  },
+  "menuItems": [
+    {
+      "enable": true,
+      "titleId": "Home",
+      "label": "Home"
+    },
+    {
+      "enable": true,
+      "titleId": "Press Releases",
+      "label": "Press Releases"
+    },
+    {
+      "enable": true,
+      "titleId": "Blogs",
+      "label": "Blogs"
+    },    
+    {
+      "enable": true,
+      "titleId": "Document Center",
+      "label": "Document Center"
+    },
+    {
+      "enable": true,
+      "titleId": "Financial Reports",
+      "label": "Financial Reports"
+    },
+    {
+      "enable": true,
+      "titleId": "Stock Information",
+      "label": "Stock Information"
+    },
+    {
+      "enable": true,
+      "titleId": "Events Calendar",
+      "label": "Events Calendar"
+    }
+  ],
+  "rss": {
+    "url": "http://www.q4blog.com/feed/"
+  },
+  "eventMapLink": true,
+  "chartVolume": true,
+  "magazineChart": true,
+  "addPage": true,
+  "shortBodyThumbnails": true,
+  "q4client": true,
+  "live": true,
+  "clientLogo": "http://investors.ryder.com/files/images/mobile/logoLanding.png",
+  "splashLogo": "http://investors.ryder.com/files/images/mobile/logoSplash.png",
+  "apiKey": "E80CA9CDCF484128A0E8B548D1BD08AA",
+  "siteUrl": "http://investors.ryder.com",
+  "latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+  "title": "Ryder System, Inc.",
+  "shortName": "Ryder",
+  "_id": "535a45d9bb4d26020068cb20",
+  "__v": 0,
+  "docuemntCategory": [],
+  "pageSize": 28,
+  "sec": {
+    "exchange": "NYSE",
+    "symbol": "R"
+  },
+  "getGoogleAnalytics": {
+    "account": "UA-20533600-10",
+    "domain": "ryder.com"
+  },
+  "stock": {
+    "exchange": "NYSE",
+    "symbol": "R"
+  },
+  "sharing":false
+}

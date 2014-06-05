@@ -1,0 +1,98 @@
+{
+"apiKey": "44B2266E8A7F4C3085DB239D194D822A",
+
+"getGoogleAnalytics" : {
+	"account": "UA-40282025-1",
+	"domain": "cyaninc.com"
+},
+
+"clientLogo": "http://investor.cyaninc.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#2E6EB5"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#2E6EB5"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://investor.cyaninc.com/",
+	
+	
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "CYNI"
+	},
+	
+	"sec": {
+		"exchange": "NYSE",
+		"symbol"  : "CYNI"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://investor.cyaninc.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "Cyan",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Financial Reports",
+        "titleId": "Financial Reports",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+    ],
+
+
+
+}

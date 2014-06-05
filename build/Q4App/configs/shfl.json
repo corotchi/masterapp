@@ -1,0 +1,117 @@
+{
+"apiKey": "EDF622B092E24E9E80496B6C057F136E",
+
+"getGoogleAnalytics" : {
+	"account": "UA-26543080-1",
+	"domain": "shufflemaster.q4web.com"
+},
+
+"clientLogo": "http://shufflemaster.q4web.com/files/images/mobile/logo.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#000000"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#000000"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://shufflemaster.q4web.com",
+	
+	
+	
+	"stock": {
+		"exchange": "NASD",
+		"symbol"  : "SHFL"
+	},
+	
+	"sec": {
+		"exchange": "NasdaqGlobal",
+		"symbol"  : "SHFL"
+	},
+	
+	"latestReportCategory": "Annual Report",
+	
+	"splashLogo": "http://shufflemaster.q4web.com/files/images/mobile/logo.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "SHFL entertainment, Inc.",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Financial Reports",
+        "titleId": "Financial Reports",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "Analyst Center",
+        "url": "http://interactive.indigotools.com/indigoweb/default.aspx?ticker=SHFL&type=3&exchange=NASDAQGS",
+        "type": "external"
+        },
+
+        {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+        },
+
+        {
+        "title": "Play Our Games",
+        "tag": "external",
+        "url": "http://playshfl.com",
+        "type": "external"
+        },
+
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+    ],
+
+
+
+}

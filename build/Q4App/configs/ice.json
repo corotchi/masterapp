@@ -1,0 +1,88 @@
+{
+"apiKey": "D84F7658E83642BDA05FBDD61312906E",
+
+"getGoogleAnalytics" : {
+	"account": "UA-28420521-4",
+	"domain": "theice.com"
+},
+
+"clientLogo": "http://ir.theice.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#004468"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#004468"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://ir.theice.com",
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "ICE"
+	},
+	
+	"sec": {
+		"exchange": "NYSE",
+		"symbol"  : "ICE"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://ir.theice.com/files/images/mobile/logoSplash.png",
+	
+	"fullSiteURL": "fullSiteUrl: 'missing value',",
+	
+	"pageSize": 28,
+	
+	"siteMap": 
+	[
+    {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+    },
+
+    {
+        "title": "Corporate Site",
+        "url": "http://www.theice.com",
+        "type": "external"
+    },
+    ],
+
+    "docuemntCategory": 
+    [
+    {
+        "name": "Supplemental Information"
+    },
+
+    {
+        "name": "Governance Documents"
+    },
+
+    {
+        "name": "Corporate Actions"
+    },
+
+    {
+        "name": "ICE/NYSE Acquisition"
+    },
+    ],
+
+		
+	"title"     : "IntercontinentalExchange",
+	
+	"shortBodyThumbnails": true,
+
+	"tagListReports": "ice"
+}

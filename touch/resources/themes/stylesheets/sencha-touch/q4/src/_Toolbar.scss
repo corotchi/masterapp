@@ -2,9 +2,14 @@
  * @class Ext.Toolbar
  */
 
+.x-toolbar {
+  background: none;
+}
+
 .x-toolbar.x-docked-top {
-    background: none;background: none;
-    padding: 10px 20px 10px 40px;
+    background: none;
+    background: none;
+//    padding: 10px 20px 10px 40px;
     border-bottom: 1px solid rgba(255,255,255,0.09);
 
   .x-title {
@@ -38,12 +43,23 @@
         width: 7em;
         padding: $toolbar-spacing;
     }
+
+
+  &.phoneToolbar {
+    background-color: #242932;
+    z-index: 0;
+  }
+
 }
 
 .x-title {
     font-size: 1.2em;
     margin: 0 0.3em;
     padding: 0 0em;
+
+    &.x-title-align-left {
+      padding: 0;
+    }
 }
 
 

@@ -6,6 +6,11 @@ Ext.define('Q4App.view.Home', {
         cls: 'homeList',
         xtype: 'dataview',
         store: 'Company',
+        pressedDelay: 10,
+        masked: {
+            xtype: 'loadmask'
+            /*message: 'My message'*/
+        },
         itemTpl: [
             '<span><img src="{clientLogo}" alt="{title}" /></span>',
             '<h3>{title}</h3>'

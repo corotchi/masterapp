@@ -1,0 +1,102 @@
+{
+    "apiKey": "602F6232BC3142C1ADF5071C720E5AF3",
+
+    "getGoogleAnalytics" : {
+        "account": "UA-29531014-1",
+        "domain": "q4web.com"
+    },
+
+    "clientLogo": "http://greatpanther2012.q4web.com/files/images/mobile/logoLanding.png",
+    "chartTheme": {
+        "chart": {
+            "zoomType": "none",
+            "pinchType": "none"
+        },
+        "colors": ["#1c3d68"],
+        "navigator": {
+            "series": {
+                "lineWidth": 0,
+                "color": "#1c3d68"
+            }
+        },
+        "tooltip": {
+            "followPointer": true,
+            "followTouchMove": true
+        }
+    },
+
+    "siteUrl"   : "http://greatpanther2012.q4web.com",
+
+    "decktopSiteURL": "http://greatpanther.com",
+
+    "stock": {
+        "exchange": "NYSE",
+        "symbol"  : "GPL"
+    },
+
+    "sec": {
+        "exchange": "CIK",
+        "symbol"  : "0001300050"
+    },
+
+    "latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+
+    "splashLogo": "http://greatpanther2012.q4web.com/files/images/mobile/logoSplash.png",
+
+    "pageSize": 28,
+
+    "title"     : "Great Panther Silver",
+
+    "shortBodyThumbnails": true,
+
+    "magazineChart": true,
+
+    "menuItems":
+        [
+            {
+                "label": "Home",
+                "titleId": "Home",
+            },
+
+            {
+                "label": "Press Releases",
+                "titleId": "Press Releases",
+            },
+
+            {
+                "label": "Document Center",
+                "titleId": "Document Center",
+            },
+
+            {
+                "label": "Financial Reports",
+                "titleId": "Financial Reports",
+            },
+
+            {
+                "label": "Stock Information",
+                "titleId": "Stock Information",
+            },
+
+            {
+                "label": "Events Calendar",
+                "titleId": "Events Calendar",
+            },
+        ],
+
+    "siteMap":
+        [
+            {
+                "title": "Analyst Coverage",
+                "tag": "analyst",
+                "type": "content"
+            },
+
+            {
+                "title": "Contact Us",
+                "tag": "contact",
+                "type": "content"
+            },
+        ],
+
+}

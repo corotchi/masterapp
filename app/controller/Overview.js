@@ -6,8 +6,8 @@ Ext.define('Q4App.controller.Overview', {
             back: 'navigation button[id="back"]',
             backDetails: 'navigation button[id="backDetails"]',
             titlebar: 'overview titlebar',
-            siteBtn: 'overview titlebar button[id="externalSite"]',
-            followBtn: 'overview titlebar button[id="followBtn"]',
+            siteBtn: 'overview button[id="externalSite"]',
+            followBtn: 'overview  button[id="followBtn"]',
             overview: 'overview',
             details: 'overview panel',
             overviewBox: 'overview dataview'
@@ -36,9 +36,11 @@ Ext.define('Q4App.controller.Overview', {
     },
 
     onOverviewInit: function (viewport) {
-        var data = this.getTitlebar().getData();
+        var data = viewport.getData();
         this.setFollowed(!data.favorite);
 
+        this.getTitlebar()
+            .setTitle('<span>' + data.stock.exchange + ':</span>' + data.title);
 
         Ext.getStore('StockChart').load(function(records){
             this.buildChart(records);
@@ -121,9 +123,9 @@ Ext.define('Q4App.controller.Overview', {
 
     onBoxTap: function (list, index, el, record) {
         switch (list.getId()) {
-            case 'companyNews' :
+           /* case 'companyNews' :
                 this.openNews(record);
-                break;
+                break;*/
             case 'companyEvents' :
                 this.addToCalendar(record);
                 break;
@@ -136,42 +138,32 @@ Ext.define('Q4App.controller.Overview', {
         }
     },
 
-    openNews: function(record){
-        this.getOverview().setActiveItem(1);
-        this.toggleBack(true);
-
-        var newsHtml = [
-            '<div class="head">',
-                '<span class="icon"><i class="news"></i></span>',
-                '<h3>Press Release</h3>',
-            '</div>',
-            '<div class="body">',
-                '<h1 class="mainTitle">' + record.getData().Headline + '</h1>' +
-                record.getData().Body +
-            '</div>'
-        ].join('');
-
-        /*var test = '<iframe src="http://q4app.com/sencha/build/?project=ice" height="100%" width="100%"></iframe>'*/
-
-        this.getDetails().setHtml(newsHtml);
-    },
-
     addToCalendar: function (record) {
 
         if (window.plugins) {
+
             var data = record.getData();
             var startDate = new Date(data.StartDate);
             var endDate = new Date(data.EndDate);
             var title = data.Title;
             var location = "";
             var notes = "";
-            var success = function(message) {
-                alert("The event was successful !");
-            };
-            var error = function(message) { alert("Error: " + message); };
 
-             // create
-            window.plugins.calendar.createEvent(title,location,notes,startDate,endDate,success,error);
+            function onConfirm(buttonIndex) {
+                if (buttonIndex === 1 ) {
+                    var success = function(message) {
+
+                    };
+                    var error = function(message) { alert("Error: " + message); };
+                    window.plugins.calendar.createEvent(title,location,notes,startDate,endDate,success,error);
+                }
+            }
+            navigator.notification.confirm(
+                title, // message
+                onConfirm,
+                "Add To Calendar !",
+                ['OK','Cancel']
+            );
         }
     },
 
@@ -179,14 +171,14 @@ Ext.define('Q4App.controller.Overview', {
 
     downloadPdf: function(record, el) {
         var button = el.down('span.view_more');
-        var url = record.getData().DocumentPath;
         var me = this;
 
-        if (this.downloadStatus && window.plugins) {
+        if (this.downloadStatus) {
             me.downloadStatus = false;
             button.setHtml('Loading ..');
             button.addCls('progress');
 
+            var url = record.getData().DocumentPath;
             var loadingStatus = {
                 setPercentage: function (num) {
                     var percentComplete = Math.round(num * 100);
@@ -210,17 +202,17 @@ Ext.define('Q4App.controller.Overview', {
                 fileURL,
                 function (entry) {
                     button.setHtml('Download PDF');
-                    me.downloadStatus = true;
                     button.removeCls('progress');
 
-                    cordova.exec(null, null, 'CDVPDFViewer', 'showPDF', ['../tmp/' + documentTitle ]);
+                    me.downloadStatus = true;
                     console.log('download complete: ' + entry.fullPath);
+                    cordova.exec(null, null, 'CDVPDFViewer', 'showPDF', ['../tmp/' + documentTitle ]);
                 },
                 function (error) {
                     button.setHtml('Download PDF');
                     button.removeCls('progress');
-                    me.downloadStatus = true;
 
+                    me.downloadStatus = true;
                     console.log('download error source ' + error.source);
                     console.log('download error target ' + error.target);
                     console.log('upload error code' + error.code);
@@ -246,14 +238,16 @@ Ext.define('Q4App.controller.Overview', {
     },
 
     onSiteTap: function (button) {
-        var url = this.getTitlebar().getData().siteUrl;
-        var ref = window.open(url + '/m', '_blank', 'location=yes');
+        /*var url = this.getOverview().getData().siteUrl;
+        var ref = window.open(url + '/m', '_blank', 'location=yes');*/
+
+        var ref = window.open('Q4App/index.html?project=' + this.getOverview().getData().shortName , '_blank', 'location=yes');
+
     },
 
     onFollowTap: function (button) {
-        var data = this.getTitlebar().getData();
+        var data = this.getOverview().getData();
         var follow = (data.favorite) ? true : false;
-        this.getFollowed();
 
         var dataModel = {
             shortName: data.shortName,
@@ -263,11 +257,10 @@ Ext.define('Q4App.controller.Overview', {
 
         this.toggleFollowBtn();
 
-        var store = Ext.getStore('Company');
-        store.findRecord('shortName', data.shortName).data.favorite = !follow;
 
         Ext.Ajax.request({
-            url : 'http://localhost:5000/niri/api/favorite',
+            /*url : 'http://localhost:5000/niri/api/favorite',*/
+            url : 'http://q4staging.herokuapp.com/niri/api/favorite',
             method : "PUT",
              headers: {
                 'Content-Type': 'application/json'
@@ -275,7 +268,9 @@ Ext.define('Q4App.controller.Overview', {
             params : Ext.JSON.encode(dataModel),
             useDefaultXhrHeader : false,
                 success : function(response) {
-                    /*Ext.Msg.alert("Success", "Welcome ");*/
+                    var store = Ext.getStore('Company');
+                    store.findRecord('shortName', data.shortName).data.favorite = !follow;
+//                    Ext.Msg.alert("Success", "Welcome ");
                 },
                 failure : function(response) {
                     console.log(response);
@@ -286,6 +281,10 @@ Ext.define('Q4App.controller.Overview', {
     setFollowed: function (status) {
         this.follow = status;
         this.toggleFollowBtn();
+    },
+
+    getFollowed: function (status) {
+        /*this.toggleFollowBtn();*/
     },
 
     toggleFollowBtn: function(status){

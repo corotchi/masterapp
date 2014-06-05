@@ -1,0 +1,140 @@
+{
+	/** 
+	 * API key used for Q4 feed
+	 * required : true
+	**/
+	"apiKey"    : "2BEA036971594CBC954897E9F9B794B7",
+	
+	/** 
+	 * Google analytics account info
+	 * required : true
+	**/
+	"getGoogleAnalytics" : {
+		"account": "UA-22320335-1",
+		"domain": "patrascity.gr"
+	} ,
+	
+	/** 
+	 * image path for the client logo in top toolbar
+	 * required : true
+	**/
+	"clientLogo": "http://investors.nikeinc.com/files/images/mobile/Logo_splash.png",
+	
+	/** 
+	 * chart customization
+	 * used on char and in magazine view
+	 * required : false
+	**/
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#F47920"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#F47920"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+
+	/** 
+	 * Ex: {name: 'Category Name'}
+	 * Document Center additional categories
+	 * required : false
+	**/
+	"docuemntCategory": false,
+
+	/**
+	 * Filter Financial reports category 
+	 * required : false
+	**/
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+
+	/**
+	 * Main site url 
+	 * Source of Q4 feeds
+	 * required : true
+	*/
+	"siteUrl"   : "http://investors.nikeinc.com",
+
+	/**
+	 * Stock Sybol and exnage
+	 * Used for chart and stock quotes
+	 * required: true
+	**/
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "NKE"
+	},
+	
+	/*
+	 * Logo Path for splash intro image
+	 * required: false
+	*/
+	"splashLogo": "http://investors.nikeinc.com/files/images/mobile/Logo_splash.png",
+	
+	/*
+	 * Page size for global feeds
+	 * required: true
+	*/
+	"pageSize": 25,
+
+	"menuItems" : [
+          {
+              "label": "Home",
+              "titleId": "Home"
+          },
+          {
+              "label": "Document TEST",
+              "titleId": "Document Center"
+          },
+          {
+              "label": "Press Releases",
+              "titleId": "Press Releases"
+          },
+          {
+              "label": "Financial Reports",
+              "titleId": "Financial Reports"
+          },
+          {
+              "label": "Stock Information",
+              "titleId": "Stock Information"
+          },
+          {
+              "label": "Events Calendar",
+              "titleId": "Events Calendar"
+          }
+      ],
+
+	/*
+	 * Additional pages for the app
+	 * required: false
+	*/
+	"siteMap": [
+	    {
+	        "title": "Contact Us",
+	        "tag": "contact",
+	        "type": "content"
+	    }
+    ],
+
+    /*
+	 * App title
+	 * Usef to tab title and Stock name
+	 * required: true
+	*/
+	"title"     : "Nike",
+
+	/*
+	 * disable/enable images for short desrition news content type
+	 * required: false
+	*/
+	"shortBodyThumbnails": true
+
+}

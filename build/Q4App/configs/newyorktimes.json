@@ -1,0 +1,117 @@
+{
+  "domain": [
+    "http://investors.nytco.com",
+    "http://newyorktimes.q4web.com"
+  ],
+  "siteMap": [
+    {
+      "type": "content",
+      "tag": "contact",
+      "title": "Contact Us"
+    },
+    {
+      "type": "content",
+      "tag": "analyst",
+      "title": "Analyst Coverage"
+    }
+  ],
+  "documentVisibility": {
+    "annualReports": true,
+    "quarterlyEarnings": true,
+    "supplementalReports": true,
+    "presentations": true,
+    "secFilings": true
+  },
+  "docuemntCategoryName": [],
+  "chartTheme": {
+    "tooltip": {
+      "followTouchMove": true,
+      "followPointer": true
+    },
+    "navigator": {
+      "series": {
+        "color": "#57a4d5",
+        "lineWidth": 0
+      }
+    },
+    "colors": [
+      "#57a4d5"
+    ],
+    "chart": {
+      "pinchType": "none",
+      "zoomType": "none"
+    }
+  },
+  "menuItems": [
+    {
+      "enable": true,
+      "titleId": "Home",
+      "label": "Home"
+    },
+    {
+      "enable": true,
+      "titleId": "Press Releases",
+      "label": "Press Releases"
+    },
+    {
+      "enable": true,
+      "titleId": "Document Center",
+      "label": "Document Center"
+    },
+    {
+      "enable": true,
+      "titleId": "Financial Reports",
+      "label": "Financial Reports"
+    },
+    {
+      "enable": true,
+      "titleId": "Stock Information",
+      "label": "Stock Quote"
+    },
+    {
+      "enable": true,
+      "titleId": "Events Calendar",
+      "label": "Events Calendar"
+    },
+    {
+      "label": "Blogs",
+      "titleId": "Blogs"
+    }
+  ],
+  "rss": {
+    "url": ""
+  },
+  "eventMapLink": true,
+  "chartVolume": true,
+  "magazineChart": true,
+  "addPage": true,
+  "shortBodyThumbnails": true,
+  "sharing": true,
+  "q4client": true,
+  "live": false,
+  "__v": 0,
+  "_id": "5342fc494fade1020017245b",
+  "apiKey": "D303C75CEA3240E2AFB92D039EBB011D",
+  "clientLogo": "http://newyorktimes.q4web.com/files/images/mobile/logoLanding.png",
+  "desktopSiteURL": "http://investors.nytco.com",
+  "latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+  "shortName": "newyorktimes",
+  "siteUrl": "http://newyorktimes.q4web.com",
+  "splashLogo": "http://newyorktimes.q4web.com/files/images/mobile/logoSplash.png",
+  "title": "The New York Times Company",
+  "version": "3.9.1.6600",
+  "docuemntCategory": [],
+  "pageSize": 40,
+  "sec": {
+    "exchange": "NYSE",
+    "symbol": "NYT"
+  },
+  "getGoogleAnalytics": {
+    "account": "UA-44493778-1",
+    "domain": "http://nytco.com"
+  },
+  "stock": {
+    "exchange": "NYSE",
+    "symbol": "NYT"
+  }
+}

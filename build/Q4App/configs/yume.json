@@ -1,0 +1,116 @@
+{
+"apiKey": "1359885CADFD474F8B7059348AA0B7B9",
+
+"getGoogleAnalytics" : {
+	"account": "UA-42622685-1",
+	"domain": "yume.com"
+},
+
+"clientLogo": "http://yume.q4web.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#12a8e1"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#12a8e1"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://investors.yume.com",
+	
+	"decktopSiteURL": "http://investors.yume.com",
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "YUME"
+	},
+	
+	"sec": {
+		"exchange": "NYSE",
+		"symbol"  : "YUME"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://yume.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "YuMe",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "About YuMe",
+        "tag": "about",
+        "type": "content"
+        },
+
+        {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+        },
+
+        {
+        "title": "FAQ",
+        "tag": "faq",
+        "type": "content"
+        },
+
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+    ],
+
+    "docuemntCategory": 
+    [
+         {
+        "name": "Corporate Governance"
+         },
+    ],
+
+}

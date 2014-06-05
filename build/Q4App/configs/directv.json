@@ -1,0 +1,122 @@
+{
+  "version": "3.4.1",
+  "versionStaging": "3.5.1",
+  "domain": [],
+  "siteMap": [
+    {
+      "type": "content",
+      "tag": "business",
+      "title": "Business Strategy"
+    },
+    {
+      "type": "content",
+      "tag": "vision",
+      "title": "2016 Financial Vision"
+    },
+    {
+      "type": "content",
+      "tag": "contact",
+      "title": "Contact Us"
+    },
+    {
+      "type": "content",
+      "tag": "corporate",
+      "title": "Corporate Profile"
+    },
+    {
+      "type": "content",
+      "tag": "analyst",
+      "title": "Analyst Coverage"
+    }
+  ],
+  "annualReports": true,
+  "quarterlyEarnings": true,
+  "supplementalReports": true,
+  "presentations": true,
+  "secFilings": true,
+  "docuemntCategoryName": [],
+  "chartTheme": {
+    "tooltip": {
+      "followTouchMove": true,
+      "followPointer": true
+    },
+    "navigator": {
+      "series": {
+        "color": "#329be3",
+        "lineWidth": 0
+      }
+    },
+    "colors": [
+      "#329be3"
+    ],
+    "chart": {
+      "pinchType": "none",
+      "zoomType": "none"
+    }
+  },
+  "menuItems": [
+    {
+      "enable": true,
+      "titleId": "Home",
+      "label": "Home"
+    },
+    {
+      "enable": true,
+      "titleId": "Stock Information",
+      "label": "Stock Information"
+    },
+    {
+      "enable": true,
+      "titleId": "Financial Reports",
+      "label": "Financial Reports"
+    },
+    {
+      "enable": true,
+      "titleId": "Document Center",
+      "label": "Document Center"
+    },
+    {
+      "enable": true,
+      "titleId": "Press Releases",
+      "label": "Press Releases"
+    },
+    {
+      "enable": true,
+      "titleId": "Events Calendar",
+      "label": "Events Calendar"
+    }
+  ],
+  "eventMapLink": true,
+  "chartVolume": true,
+  "magazineChart": true,
+  "addPage": true,
+  "shortBodyThumbnails": true,
+  "q4client": true,
+  "live": false,
+  "__v": 0,
+  "_id": "5347f2c7bc477557034d2d18",
+  "apiKey": "53D3916B0ABC440FA4869C9D783CDF2A",
+  "clientLogo": "http://directv.q4web.com/files/images/mobile/logoLanding.png",
+  "latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+  "liveversion": "3.4.1",
+  "shortName": "DTVtest",
+  "siteUrl": "http://investor.directv.com",
+  "splashLogo": "http://directv.q4web.com/files/images/mobile/logoSplash.png",
+  "staging": true,
+  "stagingversion": "3.5.1",
+  "title": "DIRECTV",
+  "docuemntCategory": [],
+  "pageSize": 28,
+  "sec": {
+    "exchange": "CIK",
+    "symbol": "0001465112"
+  },
+  "getGoogleAnalytics": {
+    "account": "UA-46158458-1",
+    "domain": "directv.q4web.com"
+  },
+  "stock": {
+    "exchange": "NASD",
+    "symbol": "DTV"
+  }
+}

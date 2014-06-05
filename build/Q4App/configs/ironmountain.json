@@ -1,0 +1,104 @@
+{
+"apiKey": "4F571E741404411C95FB072D71D314C0",
+
+"getGoogleAnalytics" : {
+	"account": "UA-46899971-1",
+	"domain": "q4web.com"
+},
+
+"clientLogo": "http://ironmountain.q4web.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#00538e"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#00538e"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://ironmountain.q4web.com",
+	
+	"decktopSiteURL": "http://investors.ironmountain.com",
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "IRM"
+	},
+	
+	"sec": {
+		"exchange": "CIK",
+		"symbol"  : "0001020569"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://ironmountain.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "Iron Mountain",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Financial Reports",
+        "titleId": "Financial Reports",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+        },
+
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+    ],
+
+
+
+}

@@ -21,9 +21,11 @@ Ext.application({
         'Main',
         'Navigation',
         'Home',
-        'Overview',
+        /*'Overview',*/
         'Favorite'
     ],
+
+    profiles: ['Phone', 'Tablet'],
 
     stores: [
         'Company',
@@ -87,7 +89,7 @@ Ext.application({
         });*/
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('Q4App.view.Main'));
+        /*Ext.Viewport.add(Ext.create('Q4App.view.Main'));*/
     },
 
     onUpdated: function() {

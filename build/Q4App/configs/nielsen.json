@@ -1,0 +1,104 @@
+{
+"apiKey": "8E71AD23A2C84E9B9230EB9BA0244F56",
+
+"getGoogleAnalytics" : {
+	"account": "UA-46677556-1",
+	"domain": "q4web.com"
+},
+
+"clientLogo": "http://nielsen.q4web.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#00aeef"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#00aeef"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://nielsen.q4web.com",
+	
+	"decktopSiteURL": "http://ir.nielsen.com/",
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "NLSN"
+	},
+	
+	"sec": {
+		"exchange": "CIK",
+		"symbol"  : "0001492633"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://nielsen.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "Nielsen Holdings N.V.",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Financial Reports",
+        "titleId": "Financial Reports",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+        },
+
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+    ],
+
+
+
+}

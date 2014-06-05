@@ -1,0 +1,87 @@
+{
+"apiKey": "01CECE6D54CD4C77ACB66C3C9725D030",
+
+"getGoogleAnalytics" : {
+	"account": "UA-48702605-1",
+	"domain": "none"
+},
+
+"clientLogo": "http://ace.q4web.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#5a646a"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#5a646a"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://ace.q4web.com",
+	
+	"decktopSiteURL": "missing value",
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "ACE"
+	},
+	
+	"sec": {
+		"exchange": "NYSE",
+		"symbol"  : "ACE"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://ace.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+	
+	"siteMap": 
+	[
+    {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+    },
+
+    {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+    },
+    ],
+
+    "financialCategory":{
+		"AnnualReports":true,
+		"QuarterlyEarnings":true,
+		"SupplementalReports":true,
+    	"Presentations":true,
+    	"SECFilings":true
+    },
+
+    "docuemntCategory": 
+    [
+    {
+        "name": "Governance Documents"
+    },
+
+    {
+        "name": "Committee Charters"
+    },
+    ],
+
+    "Q4Client": true,
+		
+	"title"     : "ACE Limited",
+	
+	"shortBodyThumbnails": true
+}

@@ -4,6 +4,7 @@ Ext.define('Q4App.view.Overview', {
     config: {
         cls: 'CompanyOverview',
         layout: 'card',
+        hidden: true,
         items: [
             {
                 xtype: 'titlebar',
@@ -18,9 +19,9 @@ Ext.define('Q4App.view.Overview', {
                     },
                     {
                         id: 'externalSite',
-                        width: 120,
+                        width: 160,
                         align: 'right',
-                        text: 'Website'
+                        text: 'Go to Mobile App'
                     }
                 ],
                 docked: 'top',
@@ -79,6 +80,9 @@ Ext.define('Q4App.view.Overview', {
                     {
                         xtype: 'panel',
                         cls: 'companyFeedContainer',
+                        defaults: {
+                            pressedDelay: 40
+                        },
                         items: [
                             {
                                 xtype: 'dataview',

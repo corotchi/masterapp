@@ -269,6 +269,7 @@ $badge-bg-gradient: $base-gradient !default;
 
 @if $include-default-icons {
     @include icon('calendar');
+    @include icon('calendar');
     @include icon('action');
     @include icon('add');
     @include icon('arrow_down');

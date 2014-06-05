@@ -1,0 +1,139 @@
+{
+  "__v": 0,
+  "_id": "53443b811db4850200135292",
+  "addPage": true,
+  "annualReports": true,
+  "apiKey": "7F95EE09F7F1487EBE8EC928AAE7F0A6",
+  "chartVolume": true,
+  "clientLogo": "http://synopsys.q4web.com/files/images/mobile/logoLanding.png",
+  "desktopSiteURL": "http://www.synopsys.com/Company/InvestorRelations/Pages/default.aspx",
+  "eventMapLink": true,
+  "latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+  "live": false,
+  "magazineChart": true,
+  "presentations": true,
+  "quarterlyEarnings": true,
+  "secFilings": true,
+  "shortBodyThumbnails": true,
+  "shortName": "Synopsys",
+  "siteUrl": "http://synopsys.q4web.com",
+  "splashLogo": "http://synopsys.q4web.com/files/images/mobile/logoSplash.png",
+  "supplementalReports": true,
+  "title": "Synopsys",
+  "version": "3.4.1",
+  "docuemntCategory": [
+    {
+      "name": "Product Information"
+    },
+    {
+      "name": "Supplemental Reports"
+    },
+    {
+      "name": "Corporate Governance"
+    }
+  ],
+  "siteMap": [
+    {
+      "type": "content",
+      "tag": "about",
+      "title": "About Synopsys"
+    },
+    {
+      "type": "content",
+      "tag": "analyst",
+      "title": "Analyst Coverage"
+    },
+    {
+      "type": "content",
+      "tag": "faq",
+      "title": "FAQ"
+    },
+    {
+      "type": "content",
+      "tag": "contact",
+      "title": "IR Contact"
+    }
+  ],
+  "menuItems": [
+    {
+      "titleId": "Home",
+      "label": "Home",
+      "enable": true
+    },
+    {
+      "titleId": "Press Releases",
+      "label": "Press Releases",
+      "enable": true
+    },
+    {
+      "titleId": "Blogs",
+      "label": "Blogs",
+      "enable": false
+    },
+    {
+      "titleId": "Document Center",
+      "label": "Document Center",
+      "enable": true
+    },
+    {
+      "titleId": "Financial Reports",
+      "label": "Financial Reports",
+      "enable": true
+    },
+    {
+      "label": "Stock Information",
+      "titleId": "Stock Information",
+      "enable": true
+    },
+    {
+      "label": "Events Calendar",
+      "titleId": "Events Calendar",
+      "enable": true
+    }
+  ],
+  "pageSize": 28,
+  "domain": [],
+  "sec": {
+    "exchange": "CIK",
+    "symbol": "0000883241"
+  },
+  "chartTheme": {
+    "tooltip": {
+      "followTouchMove": true,
+      "followPointer": true
+    },
+    "navigator": {
+      "series": {
+        "color": "#773D97",
+        "lineWidth": 0
+      }
+    },
+    "colors": [
+      "#773D97"
+    ],
+    "chart": {
+      "pinchType": "none",
+      "zoomType": "none"
+    }
+  },
+  "getGoogleAnalytics": {
+    "account": "UA-45375809-1",
+    "domain": "synopsys.com"
+  },
+  "stock": {
+    "exchange": "NASD",
+    "symbol": "SNPS"
+  },
+  "documentVisibility": {
+    "annualReports": true,
+    "quarterlyEarnings": true,
+    "supplementalReports": true,
+    "presentations": true,
+    "secFilings": true
+  },
+  "docuemntCategoryName": [],
+  "rss": {
+    "url": ""
+  },
+  "q4client": true
+}

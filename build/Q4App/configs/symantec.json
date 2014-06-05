@@ -1,0 +1,105 @@
+{
+    "version": "3.4.1",
+    "domain": [
+        "http://investor.symantec.com",
+        "http://symantec.q4web.com"
+    ],
+    "siteMap": [
+        {
+            "type": "content",
+            "tag": "analyst",
+            "title": "Analyst Coverage"
+        },
+        {
+            "type": "content",
+            "tag": "contact",
+            "title": "Contact Us"
+        }
+    ],
+    "annualReports": true,
+    "quarterlyEarnings": true,
+    "supplementalReports": true,
+    "presentations": true,
+    "secFilings": true,
+    "docuemntCategoryName": [],
+    "chartTheme": {
+        "tooltip": {
+            "followTouchMove": true,
+            "followPointer": true
+        },
+        "navigator": {
+            "series": {
+                "color": "#444444",
+                "lineWidth": 0
+            }
+        },
+        "colors": [
+            "#444444"
+        ],
+        "chart": {
+            "pinchType": "none",
+            "zoomType": "none"
+        }
+    },
+    "menuItems": [
+        {
+            "enable": true,
+            "titleId": "Home",
+            "label": "Home"
+        },
+        {
+            "enable": true,
+            "titleId": "Press Releases",
+            "label": "Press Releases"
+        },
+        {
+            "enable": true,
+            "titleId": "Document Center",
+            "label": "Document Center"
+        },
+        {
+            "enable": true,
+            "titleId": "Financial Reports",
+            "label": "Financial Reports"
+        },
+        {
+            "enable": true,
+            "titleId": "Stock Information",
+            "label": "Stock Information"
+        },
+        {
+            "enable": true,
+            "titleId": "Events Calendar",
+            "label": "Events Calendar"
+        }
+    ],
+    "eventMapLink": true,
+    "chartVolume": true,
+    "magazineChart": true,
+    "addPage": true,
+    "shortBodyThumbnails": true,
+    "live": true,
+    "clientLogo": "http://investor.symantec.com/files/images/mobile/logoLanding.png",
+    "splashLogo": "http://investor.symantec.com/files/images/mobile/logoSplash.png",
+    "apiKey": "890FB40EE0A146A09D67225F6F27A10C",
+    "siteUrl": "http://investor.symantec.com",
+    "latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+    "title": "Symantec Corporation",
+    "shortName": "Symantec",
+    "_id": "535a5764bb4d26020068cb22",
+    "__v": 0,
+    "docuemntCategory": [],
+    "pageSize": 28,
+    "sec": {
+        "exchange": "NasdaqGlobal",
+        "symbol": "SYMC"
+    },
+    "getGoogleAnalytics": {
+        "account": "UA-41651098-1",
+        "domain": "symantec.com"
+    },
+    "stock": {
+        "exchange": "NASD",
+        "symbol": "SYMC"
+    }
+}

@@ -1,0 +1,119 @@
+{
+  "domain": [],
+  "siteMap": [
+    {
+      "title": "Analyst Coverage",
+      "tag": "analyst",
+      "type": "content"
+    },
+    {
+      "title": "Contact Us",
+      "tag": "contact",
+      "type": "content"
+    }
+  ],
+  "documentVisibility": {
+    "annualReports": true,
+    "quarterlyEarnings": true,
+    "supplementalReports": true,
+    "presentations": true,
+    "secFilings": true
+  },
+  "docuemntCategoryName": [],
+  "chartTheme": {
+    "tooltip": {
+      "followTouchMove": true,
+      "followPointer": true
+    },
+    "navigator": {
+      "series": {
+        "color": "#186097",
+        "lineWidth": 0
+      }
+    },
+    "colors": [
+      "#186097"
+    ],
+    "chart": {
+      "pinchType": "none",
+      "zoomType": "none"
+    }
+  },
+  "menuItems": [
+    {
+      "label": "Home",
+      "titleId": "Home",
+      "enable": true
+    },
+    {
+      "label": "Press Releases",
+      "titleId": "Press Releases",
+      "enable": true
+    },
+    {
+      "label": "Blogs Super Awesome",
+      "titleId": "Blogs",
+      "enable": true
+    },
+    {
+      "label": "Document Center",
+      "titleId": "Document Center",
+      "enable": true
+    },
+    {
+      "label": "Financial Reports",
+      "titleId": "Financial Reports",
+      "enable": true
+    },
+    {
+      "label": "Stock Information",
+      "titleId": "Stock Information",
+      "enable": true
+    },
+    {
+      "label": "Events Calendar",
+      "titleId": "Events Calendar",
+      "enable": true
+    }
+  ],
+  "rss": {
+    "url": "http://www.q4blog.com/feed/"
+  },
+  "eventMapLink": true,
+  "chartVolume": true,
+  "magazineChart": true,
+  "addPage": true,
+  "shortBodyThumbnails": true,
+  "sharing": false,
+  "q4client": true,
+  "live": false,
+  "__v": 0,
+  "_id": "5384b54abab45c53063b4f6a",
+  "apiKey": "46ECCF06B72A49DD8B0FF98ABBED0024",
+  "clientLogo": "http://chegg.q4web.com/files/images/mobile/logoLanding.png",
+  "latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+  "shortName": "ChTest",
+  "siteUrl": "http://chegg.q4web.com",
+  "splashLogo": "http://chegg.q4web.com/files/images/mobile/logoSplash.png",
+  "title": "ChTest",
+  "version": "3.5.1",
+  "versionStaging": "3.5.1",
+  "docuemntCategory": [
+    {
+      "name": "Governance Documents"
+    }
+  ],
+  "pageSize": 28,
+  "sec": {
+    "exchange": "CIK",
+    "symbol": "0001364954"
+  },
+  "getGoogleAnalytics": {
+    "account": "UA-45669394-1",
+    "domain": "q4web.com"
+  },
+  "stock": {
+    "exchange": "NYSE",
+    "symbol": "CHGG"
+  }
+}

@@ -1,0 +1,104 @@
+{
+"apiKey": "D611EFF31A7D41F4842C85E82DFFE4FB",
+
+"getGoogleAnalytics" : {
+	"account": "UA-46725198-1",
+	"domain": "q4web.com"
+},
+
+"clientLogo": "http://americaneagle.q4web.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#022758"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#022758"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://americaneagle.q4web.com",
+	
+	"decktopSiteURL": "http://investors.ae.com",
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "AEO"
+	},
+	
+	"sec": {
+		"exchange": "CIK",
+		"symbol"  : "0000919012"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://americaneagle.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "American Eagle",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Financial Reports",
+        "titleId": "Financial Reports",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+        },
+
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+    ],
+
+
+
+}

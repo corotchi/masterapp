@@ -1,0 +1,88 @@
+{
+"apiKey": "32DEB6B0A81E4D6B8FE2B60A5B74E528",
+
+"getGoogleAnalytics" : {
+	"account": "UA-46151737-1",
+	"domain": "q4web.com"
+},
+
+"clientLogo": "http://hilton.q4web.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#8b836e"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#8b836e"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://hilton.q4web.com",
+	
+	"decktopSiteURL": "http://ir.hiltonworldwide.com",
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "HLT"
+	},
+	
+	"sec": {
+		"exchange": "CIK",
+		"symbol"  : "0001585689"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://hilton.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+	
+	"siteMap": 
+	[
+    {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+    },
+
+    {
+        "title": "Investor FAQ",
+        "tag": "faq",
+        "type": "content"
+    },
+
+    {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+    },
+    ],
+
+    "financialCategory":{
+		"AnnualReports":true,
+		"QuarterlyEarnings":true,
+		"SupplementalReports":true,
+    	"Presentations":true,
+    	"SECFilings":true
+    },
+
+    "docuemntCategory": 
+    [
+    {
+        "name": "Governance Documents"
+    },
+    ],
+
+		
+	"title"     : "Hilton Worldwide",
+	
+	"shortBodyThumbnails": true
+}

@@ -1,0 +1,98 @@
+{
+"apiKey": "EDF1E9CC4A2045CBA17CA2C8AF426540",
+
+"getGoogleAnalytics" : {
+	"account": "UA-42047663-1",
+	"domain": "stonemor.q4web.com"
+},
+
+"clientLogo": "http://stonemor.q4web.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#3f5e13"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#3f5e13"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://stonemor.com/",
+	
+	
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "STON"
+	},
+	
+	"sec": {
+		"exchange": "NYSE",
+		"symbol"  : "STON"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://stonemor.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "StoneMor Partners L.P.",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Financial Reports",
+        "titleId": "Financial Reports",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+    ],
+
+
+
+}

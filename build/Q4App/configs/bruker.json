@@ -1,0 +1,69 @@
+{
+"apiKey": "E5F5C59396314FA2A2742656166DFA19",
+
+"getGoogleAnalytics" : {
+	"account": "missing value",
+	"domain": "bruker.q4web.com"
+},
+
+"clientLogo": "http://bruker.q4web.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#0070bb"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#0070bb"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://bruker.q4web.com",
+	
+	"decktopSiteURL": "missing value",
+	
+	"stock": {
+		"exchange": "NASD",
+		"symbol"  : "BRKR"
+	},
+	
+	"sec": {
+		"exchange": "CIK",
+		"symbol"  : "0001109354"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://bruker.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+	
+	"siteMap": 
+	[
+    {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+    },
+
+    {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+    },
+    ],
+
+
+
+		
+	"title"     : "Bruker Corp.",
+	
+	"shortBodyThumbnails": true
+}

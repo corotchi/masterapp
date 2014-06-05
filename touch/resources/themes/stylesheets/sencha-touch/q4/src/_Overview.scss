@@ -15,7 +15,9 @@
 
 
 
+  .phoneCompanyToolbar,
   .companyName {
+    padding: 6px 10px 6px 40px;
 
     .x-button {
       background: #20262a;
@@ -76,7 +78,6 @@
     }
   }
 
-
   .stockQuote {
     float: left;
     height: 225px;
@@ -119,8 +120,6 @@
     }
   }
 
-
-
   #overviewChart {
     margin: 50px 40px 0 400px;
     position: relative;
@@ -134,7 +133,6 @@
 
   }
 
-
   .companyFeedContainer {
     clear: both;
     position: absolute;
@@ -142,6 +140,7 @@
     width: 100%;
     padding: 30px 30px 0;
   }
+
   .companyBox {
     float: left;
     width: 33%;
@@ -239,7 +238,6 @@
     }
   }
 
-
   .x-dataview-item {
 
     &.x-item-pressed {
@@ -251,7 +249,6 @@
   }
 
 }
-
 
 .overviewDetails {
   padding: 0 20px 0px;
@@ -300,27 +297,155 @@
 
 
 
-
 .x-portrait {
 
   .CompanyOverview {
 
     .stockQuote {
         float: none;
+        border-top: 1px solid rgba(255,255,255,0.09);
+
+      .x-inner {
+        border: none;
+      }
     }
 
     #overviewChart {
       float: none;
-      margin: 0 30px;
+      margin: 0 30px 15px;
       padding: 0;
-    }
-
-    .companyBox {
-      height: 220px;
     }
   }
 
+  .companyBox {
+    height: 220px;
+  }
+
 }
+
+
+
+
+.x-phone {
+
+  .x-toolbar.x-docked-top.phoneCompanyToolbar {
+    background-color: #242932;
+    padding: 0;
+    border: none;
+
+    .x-button {
+      padding: 9px 3px;
+    }
+
+    .x-button.fullButton {
+      background: none;
+      border: none;
+      border-right: 1px solid #2f343c;
+      border-radius: 0;
+      margin: 0;
+      color: #fff;
+      height: 52px;
+
+      &.x-button-pressing {
+        background-color: #dad27d;
+      }
+
+      .x-button-icon {
+        background-repeat: no-repeat;
+        background-size: 96% auto;
+
+        &.back{
+          background-image: theme_image('q4', "back.png");
+        }
+
+        &:before {
+          display: none;
+        }
+      }
+
+      &.active {
+        background-color: #50ada5;
+      }
+    }
+  }
+
+  .CompanyOverview {
+
+    .companyName {
+      padding: 10px;
+
+      .x-title {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 200;
+        max-width: 290px;
+        text-align: left;
+        font-size: .9em;
+
+        .x-innerhtml {
+          white-space: normal;
+        }
+
+        span {
+          color: #76bfb9;
+          padding-right: 10px;
+        }
+      }
+    }
+
+    #overviewChart {
+      float: none;
+      width: auto;
+      margin: 0 15px;
+    }
+
+    .stockQuote {
+      width: auto;
+      float: none;
+      padding: 15px;
+    }
+    
+  }
+
+  .companyFeedContainer {
+    position: relative;
+  }
+  
+  .companyBox {
+    width: auto;
+    float: none;
+    height: auto;
+    border-top: 1px solid rgba(255,255,255,0.09);
+  } 
+
+  .gotToApp {
+    font-size: 13px;
+    padding: 20px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  Loader
+*/
 
 
 $blockSize: .5em;

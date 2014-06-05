@@ -1,0 +1,102 @@
+{
+"apiKey": "406551EED14C4D53B329AFA15020A767",
+
+"getGoogleAnalytics" : {
+	"account": "UA-44482676-1",
+	"domain": "http://essent.q4web.com"
+},
+
+"clientLogo": "http://essent.q4web.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#00457c"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#00457c"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://essent.q4web.com",
+	
+	
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "ESNT"
+	},
+	
+	"sec": {
+		"exchange": "CIK",
+		"symbol"  : "0001448893"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://essent.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "Essent Group",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+    ],
+
+    "docuemntCategory": 
+    [
+         {
+        "name": "Statutory Statements"
+         },
+
+         {
+        "name": "Quarterly Financial Supplements"
+         },
+    ],
+
+}

@@ -1,0 +1,119 @@
+{
+	/** 
+	 * API key used for Q4 feed
+	 * required : true
+	**/
+	"apiKey"    : "06DE913DF4ED49BF8F349A3BC46980D2",
+	
+	/** 
+	 * Google analytics account info
+	 * required : true
+	**/
+	"getGoogleAnalytics" : {
+		"account": "UA-40984902-1",
+		"domain": "ir.gcainc.com"
+	},
+	
+	/** 
+	 * image path for the client logo in top toolbar
+	 * required : true
+	**/
+	"clientLogo": "http://ir.gcainc.com/files/images/mobile/logoLanding.png",
+	
+	/*
+	 * Logo Path for splash intro image
+	 * required: false
+	*/
+	"splashLogo": "http://ir.gcainc.com/files/images/mobile/logoSplash.png",
+
+
+	/** 
+	 * chart customization
+	 * used on char and in magazine view
+	 * required : false
+	**/
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#0A5496"],
+		"navigator": {
+			"series": {
+			"lineWidth": 0,
+    			"color": "#0A5496"
+			}
+		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+
+	/** 
+	 * Ex: {name: 'Category Name'}
+	 * Document Center additional categories
+	 * required : false
+	**/
+	"docuemntCategory": false,
+
+	/**
+	 * Filter Financial reports category 
+	 * required : false
+	**/
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+
+	/**
+	 * Main site url 
+	 * Source of Q4 feeds
+	 * required : true
+	*/
+	"siteUrl"   : "http://ir.gcainc.com",
+
+	/**
+	 * Stock Sybol and exnage
+	 * Used for chart and stock quotes
+	 * required: true
+	**/
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "GCA"
+	},
+	
+	/*
+	 * Page size for global feeds
+	 * required: true
+	*/
+	"pageSize": 25,
+
+	/*
+	 * Additional pages for the app
+	 * required: false
+	*/
+	"siteMap": [
+		{
+			"title": "Analyst Coverage",
+			"tag": "analyst",
+			"type": "content"
+		},
+	    {
+	        "title": "Contact Us",
+	        "tag": "contact",
+	        "type": "content"
+	    }
+    ],
+
+    /*
+	 * App title
+	 * Usef to tab title and Stock name
+	 * required: true
+	*/
+	"title"     : "Global Cash Access",
+
+	/*
+	 * disable/enable images for short desrition news content type
+	 * required: false
+	*/
+	"shortBodyThumbnails": true
+
+}

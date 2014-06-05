@@ -1,0 +1,104 @@
+{
+"apiKey": "8E11285B508E48EF9BF39FD293AE8D41",
+
+"getGoogleAnalytics" : {
+	"account": "UA-42662628-4",
+	"domain": "http://pge.q4web.com"
+},
+
+"clientLogo": "http://pge.q4web.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#ffb50c"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#ffb50c"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://investor.pgecorp.com",
+	
+	"decktopSiteURL": "http://investor.pgecorp.com",
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "PCG"
+	},
+	
+	"sec": {
+		"exchange": "CIK",
+		"symbol"  : "0001004980"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://pge.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "PG&E",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Financial Reports",
+        "titleId": "Financial Reports",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+        },
+
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+    ],
+
+
+
+}

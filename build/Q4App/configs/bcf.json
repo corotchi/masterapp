@@ -1,0 +1,69 @@
+{
+"apiKey": "0C2D3FD6C39C45338268FBD13C94B5B0",
+
+"getGoogleAnalytics" : {
+	"account": "UA-28420521-4",
+	"domain": "q4inc.com"
+},
+
+"clientLogo": "http://bcf.q4web.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#a82744"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#a82744"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://bcf.q4web.com",
+	
+	"decktopSiteURL": "missing value",
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "BURL"
+	},
+	
+	"sec": {
+		"exchange": "CIK",
+		"symbol"  : "0001579298"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://bcf.q4web.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+	
+	"siteMap": 
+	[
+    {
+        "title": "Analyst Coverage",
+        "tag": "analyst",
+        "type": "content"
+    },
+
+    {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+    },
+    ],
+
+
+
+		
+	"title"     : "Burlington Coat Factory",
+	
+	"shortBodyThumbnails": true
+}

@@ -1,0 +1,104 @@
+{
+"apiKey": "FF53533200014FD38B516D73333F7AA5",
+
+"getGoogleAnalytics" : {
+	"account": "UA-37779604-1",
+	"domain": "level3.com"
+},
+
+"clientLogo": "http://investors.level3.com/files/images/mobile/logoLanding.png",
+	"chartTheme": {
+		"chart": {
+			"zoomType": "none",
+			"pinchType": "none"
+		},
+		"colors": ["#58585a"],
+		"navigator": {
+        			"series": {
+					"lineWidth": 0,
+            			"color": "#58585a"
+        			}
+    		},
+		"tooltip": {
+			"followPointer": true,
+			"followTouchMove": true
+		}
+	},
+	
+	"siteUrl"   : "http://investors.level3.com",
+	
+	"decktopSiteURL": "http://investors.level3.com/investor-relations/default.aspx",
+	
+	"stock": {
+		"exchange": "NYSE",
+		"symbol"  : "LVLT"
+	},
+	
+	"sec": {
+		"exchange": "NasdaqGlobal",
+		"symbol"  : "LVLT"
+	},
+	
+	"latestReportCategory": "Annual Report|First Quarter|Second Quarter|Third Quarter|Fourth Quarter",
+	
+	"splashLogo": "http://investors.level3.com/files/images/mobile/logoSplash.png",
+	
+	"pageSize": 28,
+		
+	"title"     : "Level3",
+	
+	"shortBodyThumbnails": true,
+	
+	"magazineChart": true,
+	
+	"menuItems": 
+    [
+        {
+        "label": "Home",
+        "titleId": "Home",
+        },
+
+        {
+        "label": "Press Releases",
+        "titleId": "Press Releases",
+        },
+
+        {
+        "label": "Document Center",
+        "titleId": "Document Center",
+        },
+
+        {
+        "label": "Financial Reports",
+        "titleId": "Financial Reports",
+        },
+
+        {
+        "label": "Stock Information",
+        "titleId": "Stock Information",
+        },
+
+        {
+        "label": "Events Calendar",
+        "titleId": "Events Calendar",
+        },
+    ],
+	
+	"siteMap": 
+	[
+        {
+        "title": "Transfer Agent",
+        "tag": "agent",
+        "type": "content"
+        },
+
+        {
+        "title": "Contact Us",
+        "tag": "contact",
+        "type": "content"
+        },
+    ],
+
+
+
+}

@@ -17,8 +17,8 @@ Ext.define('Q4App.store.Company', {
                 destroy: 'DELETE'
             },*/
             type: "jsonp",
-            url : "http://q4app.com/api/projects",
-            /*url : "http://localhost:5000/niri/api/getProjects",*/
+//            url : "http://q4app.com/api/projects",
+            url : "http://q4staging.herokuapp.com/niri/api/getProjects",
             extraParams: {
               live: true
             },
