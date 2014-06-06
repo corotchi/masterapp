@@ -5,7 +5,7 @@ Ext.define('Q4App.controller.Home', {
         refs: {
             main: 'main',
             home: 'home',
-            overview: 'overview',
+            overview: 'overview'
         },
         control: {
             home: {
@@ -17,11 +17,11 @@ Ext.define('Q4App.controller.Home', {
     onItemTap: function (list, el, index, record) {
 
         var overview = (Ext.os.is.Phone) ? Ext.create(Q4App.view.phone.Overview) : Ext.create(Q4App.view.tablet.Overview) ;
-
+        var panel  = (Ext.os.is.Phone) ?   this.getMain().down('panel') :  this.getMain();
         this.getHome().hide();
-        this.getMain().add(overview).show({
+        panel.add(overview).show({
             type: 'fadeIn',
-            duration: 1000
+            duration: 800
         });
 
         overview.setData(record.getData());
@@ -91,9 +91,6 @@ Ext.define('Q4App.controller.Home', {
         param.apiKey = data.apiKey;
 
         store.load();
-    },
-
-    sortReverse: false
-
+    }
 
 });

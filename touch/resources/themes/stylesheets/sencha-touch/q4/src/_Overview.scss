@@ -293,6 +293,17 @@
     margin: 0 10px 0px 0;
   }
 
+  &.phoneDetails {
+
+    .head {
+      display: none;
+    }
+    .body {
+      padding: 0;
+      padding-top: 70px;
+    }
+  }
+
 }
 
 
@@ -329,12 +340,18 @@
 .x-phone {
 
   .x-toolbar.x-docked-top.phoneCompanyToolbar {
-    background-color: #242932;
+//    background-color: #242932;
+    background-color: rgba(36, 41, 50, 0.55);
     padding: 0;
     border: none;
 
     .x-button {
       padding: 9px 3px;
+
+      &.follow {
+        margin-top: 12px;
+        margin-right: 10px;
+      }
     }
 
     .x-button.fullButton {
@@ -344,7 +361,7 @@
       border-radius: 0;
       margin: 0;
       color: #fff;
-      height: 52px;
+      height: 60px;
 
       &.x-button-pressing {
         background-color: #dad27d;
@@ -372,7 +389,7 @@
   .CompanyOverview {
 
     .companyName {
-      padding: 10px;
+      padding: 90px 10px 10px;
 
       .x-title {
         font-size: 20px;
@@ -416,6 +433,21 @@
     float: none;
     height: auto;
     border-top: 1px solid rgba(255,255,255,0.09);
+    padding-top: 30px;
+
+    .body {
+      h2 {
+        display: inline-block;
+        vertical-align: top;
+        overflow: hidden;
+        height: auto;
+      }
+    }
+
+    &.companyPresentation {
+      padding-bottom: 50px;
+    }
+
   } 
 
   .gotToApp {

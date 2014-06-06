@@ -81,6 +81,10 @@
 .x-phone {
   .homeList {
 
+    .x-scroll-scroller-vertical {
+      padding-top: 60px;
+    }
+
     .x-dataview-item {
       width: 50%;
       height: 120px;

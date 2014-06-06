@@ -4,12 +4,13 @@ Ext.define('Q4App.controller.phone.Overview', {
     config: {
         refs: {
             home: 'home',
+            phoneToolbar: 'main toolbar[id="phoneToolbar]',
             titlebar: 'overview titlebar',
             overview: 'overview',
             overviewBox: 'overview dataview',
             details: 'overview panel',
-            back: 'overview button[id="backHome"]',
-            backDetails: 'overview button[id="backPhoneDetails"]'
+            back: 'button[id="backHome"]',
+            backDetails: 'button[id="backPhoneDetails"]'
         },
         control: {
             overview: {
@@ -74,6 +75,20 @@ Ext.define('Q4App.controller.phone.Overview', {
     onBackTap: function () {
         this.getOverview().destroy();
         this.getHome().show();
+
+        var menuItems = [
+            {
+                id: 'mainMenu',
+                iconCls: 'menu'
+            },
+            {
+                cls: 'toolbarSearch',
+                iconCls: 'search',
+                id: 'search'
+            }
+        ];
+
+        this.getPhoneToolbar().setItems(menuItems);
     },
 
     onBackNewsTap: function () {

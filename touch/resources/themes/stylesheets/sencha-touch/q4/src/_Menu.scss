@@ -80,6 +80,10 @@
 
 }
 
+.mainmenu {
+  background: rgba(63, 72, 88, 1);
+}
+
 .searchPanel {
   background: #242932;
   background-size: 100%;
@@ -154,4 +158,52 @@
       right: 100px;
     }
   }
+
+  &.phoneSearch {
+    height: 60px;
+    background-color: #3C4453;
+
+    .x-button {
+      height: 60px;
+    }
+
+    .x-panel-inner,
+    .x-body {
+      background: #353C49;
+    }
+
+    .x-field-input {
+
+      .x-input-el {
+        font-size: 18px;
+        height: 60px;
+        padding: 3px 40px 3px 3px;
+
+      }
+      
+      .x-clear-icon {
+        display: none;
+      } 
+    }
+
+    .x-button {
+      &.cancel {
+        display: none;
+        background: url("../images/icons/clear.png");
+        background-size: 100%;
+        width: 38px;
+        height: 40px;
+        background-repeat: no-repeat;
+        top: 11px;
+        right: 100px;
+
+        &.x-button-pressing {
+          background-image: url("../images/icons/clear_on.png");
+
+        }
+      }
+    }
+
+  }
+
 }

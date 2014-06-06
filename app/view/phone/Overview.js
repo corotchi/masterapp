@@ -9,8 +9,9 @@ Ext.define('Q4App.view.phone.Overview', {
                 xtype: 'toolbar',
                 docked: 'top',
                 cls: 'phoneCompanyToolbar',
-                height: 50,
-                items: [
+                hidden: true,
+                height: 60
+                /*items: [
                     {
                         cls: 'fullButton ',
                         iconCls: 'back',
@@ -31,7 +32,7 @@ Ext.define('Q4App.view.phone.Overview', {
                         right: 0,
                         id: 'followBtn'
                     }
-                ]
+                ]*/
             },
             {
                 scrollable: {
@@ -43,8 +44,7 @@ Ext.define('Q4App.view.phone.Overview', {
                         xtype: 'titlebar',
                         id: 'companyTitle',
                         titleAlign: 'left',
-                        cls: 'companyName',
-                        layout: {}
+                        cls: 'companyName'
                     },
                     {
                         items: [
@@ -122,7 +122,7 @@ Ext.define('Q4App.view.phone.Overview', {
                                             '<h3>{StartDate:date("M d, Y")}</h3>',
                                             '<h2>{Title}</h2>',
                                             '</div>',
-                                            '<span class="view_more">Add To Calendar</span>',
+                                            /*'<span class="view_more">Add To Calendar</span>',*/
                                             '</tpl>'
                                         ),
                                         store: 'Event'
@@ -142,7 +142,7 @@ Ext.define('Q4App.view.phone.Overview', {
                                             '<h3>{PressReleaseDate:date("M d, Y")}</h3>',
                                             '<h2>{Headline}</h2>',
                                             '</div>',
-                                            '<span class="view_more">View Details</span>',
+                                            /*'<span class="view_more">View Details</span>',*/
                                             '</tpl>'
                                         ),
                                         store: 'PressRelease'
@@ -194,7 +194,7 @@ Ext.define('Q4App.view.phone.Overview', {
                     direction: 'vertical',
                     directionLock: true
                 },
-                cls: 'overviewDetails',
+                cls: 'overviewDetails phoneDetails',
                 styleHtmlContent: true,
                 showAnimation: {
                     type: 'fadeIn',

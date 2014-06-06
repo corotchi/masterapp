@@ -6,8 +6,8 @@ Ext.define('Q4App.controller.Overview', {
             back: 'navigation button[id="back"]',
             backDetails: 'navigation button[id="backDetails"]',
             titlebar: 'overview titlebar',
-            siteBtn: 'overview button[id="externalSite"]',
-            followBtn: 'overview  button[id="followBtn"]',
+            siteBtn: 'button[id="externalSite"]',
+            followBtn: 'button[id="followBtn"]',
             overview: 'overview',
             details: 'overview panel',
             overviewBox: 'overview dataview'
@@ -114,7 +114,7 @@ Ext.define('Q4App.controller.Overview', {
             title: false,
             series: [{
                 animation: false,
-                name: 'asd',
+                name: 'Price',
                 data: data
             }]
 

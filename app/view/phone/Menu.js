@@ -31,10 +31,6 @@ Ext.define('Q4App.view.phone.Menu',{
                 id: 'backDetails'
             },
             {
-                iconCls: 'search',
-                id: 'search'
-            },
-            {
                 iconCls: 'sort',
                 id: 'sort'
             },
@@ -72,7 +68,7 @@ Ext.define('Q4App.view.phone.Menu',{
         this.setOpen(false);
     },
 
-    onDestroy: function() {
+    onDertstroy: function() {
         this.maskCmp.destroy();
         delete this.maskCmp;
 

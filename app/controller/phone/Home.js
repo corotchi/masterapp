@@ -7,24 +7,42 @@ Ext.define('Q4App.controller.phone.Home', {
         refs: {
             main: 'main',
             home: 'home',
-            navigation: 'navigation',
-            menu: 'navigation button',
-            back: 'navigation button[id="back"]',
+            phoneToolbar: 'main toolbar[id="phoneToolbar]',
+            navigation: 'mainmenu',
+            menu: 'mainmenu button',
             overview: 'overview',
+            searchMenuBtn: 'main toolbar button[id="search"]',
             searchPanel: 'panel[id="searchPanel"]',
             searchBtn: 'panel[id="searchPanel"] button[cls="cancel"]',
             search: 'searchfield'
         },
         control: {
             home: {
-                initialize: 'onHomeInit'
+                initialize: 'onHomeInit',
+                itemtap: 'onItemTap'
+            },
+            menu: {
+                tap: 'onMenuTap'
+            },
+            search: {
+                keyup: 'onSearchKeyUp',
+                clearicontap: 'onSearchClear'
+            },
+            searchBtn: {
+                tap: 'onSearchClose'
+            },
+            searchMenuBtn : {
+                tap: 'searchListShow'
             }
         }
     },
 
-    onHomeInit: function () {},
+    onHomeInit: function (viewport) {
+
+    },
 
     onMenuTap: function(button) {
+        this.getNavigation().toggle();
         switch (button.getId()) {
             case 'sort' :
                 this.sortList(button);
@@ -34,12 +52,6 @@ Ext.define('Q4App.controller.phone.Home', {
                 break;
             case 'bookmark' :
                 this.bookmarkList(button);
-                break;
-            case 'search' :
-                this.searchList(button);
-                break;
-            case 'back' :
-                this.backHome(button);
                 break;
             default :
                 break;
@@ -51,71 +63,32 @@ Ext.define('Q4App.controller.phone.Home', {
         this.getSearchPanel().hide();
     },
 
-    onSearchHide: function() {
-        this.getNavigation().down('button[id="search"]').removeCls('active');
-    },
-
-
     onItemTap: function (list, el, index, record) {
-    },
 
-    loadNews: function(data) {
-        var store = Ext.getStore('PressRelease'),
-            proxy = store.getProxy(),
-            param = proxy.getExtraParams();
+        var items = [
+            {
+                cls: 'fullButton ',
+                iconCls: 'back',
+                id: 'backHome',
+                width: 60
+            },
+            {
+                cls: 'fullButton ',
+                iconCls: 'back',
+                hidden: true,
+                id: 'backPhoneDetails',
+                width: 60
+            },
+            {
+                cls: 'follow',
+                text: '<i class="fa fa-star""></i>',
+                id: 'followBtn'
+            }
+        ];
 
-        proxy.setUrl(data.siteUrl + "/feed/PressRelease.svc/GetPressReleaseList");
-        param.apiKey = data.apiKey;
+        this.getPhoneToolbar().setItems(items);
 
-        store.load()
-    },
 
-    loadStock: function(data) {
-        var store = Ext.getStore('Stock'),
-            proxy = store.getProxy(),
-            param = proxy.getExtraParams();
-
-        proxy.setUrl(data.siteUrl + '/feed/StockQuote.svc/GetStockQuoteList');
-        param.apiKey = data.apiKey;
-        param.exchange = data.stock.exchange;
-        param.symbol = data.stock.symbol;
-
-        store.load();
-    },
-
-    loadChart: function(data) {
-        var store = Ext.getStore('StockChart'),
-            proxy = store .getProxy(),
-            param = proxy.getExtraParams();
-
-        proxy.setUrl(data.siteUrl + '/feed/StockQuote.svc/GetStockQuoteHistoricalList');
-        param.apiKey = data.apiKey;
-        param.exchange = data.stock.exchange;
-        param.symbol = data.stock.symbol;
-
-        store.load();
-    },
-
-    loadEvents: function(data){
-        var store = Ext.getStore('Event'),
-            proxy = store.getProxy(),
-            param = proxy.getExtraParams();
-
-        proxy.setUrl(data.siteUrl + "/feed/Event.svc/GetEventList");
-        param.apiKey = data.apiKey;
-
-        store.load();
-    },
-
-    loadPresentation: function(data){
-        var store = Ext.getStore('Presentation'),
-            proxy = store.getProxy(),
-            param = proxy.getExtraParams();
-
-        proxy.setUrl(data.siteUrl + "/feed/Presentation.svc/GetPresentationList");
-        param.apiKey = data.apiKey;
-
-        store.load();
     },
 
     sortReverse: false,
@@ -131,9 +104,9 @@ Ext.define('Q4App.controller.phone.Home', {
         store.sort('title', type);
     },
 
-    searchList: function(button) {
+    searchListShow: function(button) {
         if(this.getSearchPanel().isHidden( )){
-            button.setCls('active');
+            button.setCls('active toolbarSearch');
             this.getSearchPanel().show();
         }
         else {
@@ -173,32 +146,13 @@ Ext.define('Q4App.controller.phone.Home', {
     },
 
     goHome: function (button) {
-        this.getSearchPanel().hide();
+
         var menuItems = this.getNavigation().getItems().items;
-        var store = Ext.getStore('Company');
-        store.clearFilter()
-
         Ext.each(menuItems, function(item){
             item.removeCls('active');
         }, this)
-    },
-
-    backHome: function(button) {
-        this.getOverview().destroy();
-        this.getHome().show();
-        this.getMenu().show();
-        button.hide();
-    },
-
-    clearMenu: function () {
-        var menuItems = this.getNavigation().getItems().items,
-            store = Ext.getStore('Company');
-
-        store.clearFilter();
-        Ext.each(menuItems, function(item){
-            item.removeCls('active');
-        }, this)
+        Ext.getStore('Company').clearFilter();
+        this.getSearchPanel().hide();
     }
-
 
 });

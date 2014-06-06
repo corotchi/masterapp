@@ -44,12 +44,6 @@
         padding: $toolbar-spacing;
     }
 
-
-  &.phoneToolbar {
-    background-color: #242932;
-    z-index: 0;
-  }
-
 }
 
 .x-title {
@@ -62,6 +56,83 @@
     }
 }
 
+
+.phoneToolbar {
+  background-color: rgba(73, 84, 102, 0.86);
+  border: none;
+
+  .x-button {
+    padding: 0px 15px;
+    background: none;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    color: #fff;
+    height: 60px;
+
+    &.x-button-pressing {
+      background-color: #dad27d;
+    }
+
+  /*  &.active {
+      background-color: rgba(36, 41, 50, 0.34);
+    }*/
+
+    &.follow {
+      position: absolute;
+      right: 0;
+      background: none;
+
+      .x-button-label {
+        width: 40px;
+        height: 40px;
+        color: #36373A;
+        font-size: 23px;
+      }
+
+      &.active {
+        background-color: none;
+
+        .x-button-label {
+          color: #50ada5;
+        }
+      }
+
+      &.x-button-pressing {
+        .x-button-label {
+          color: #d9d17c;
+        }
+      }
+    }
+
+    &.toolbarSearch {
+      position: absolute;
+      right: 0;
+    }
+
+    .x-button-icon {
+      background-repeat: no-repeat;
+      background-size: 96% auto;
+
+
+      &.menu{
+        background-image: theme_image('q4', "menu.png");
+      }
+
+      &.search {
+        background-image: theme_image('q4', "sortSearch.png");
+      }
+
+      &.back{
+        background-image: theme_image('q4', "back.png");
+      }
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
 
 
 /**

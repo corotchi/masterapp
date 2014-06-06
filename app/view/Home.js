@@ -9,7 +9,6 @@ Ext.define('Q4App.view.Home', {
         pressedDelay: 10,
         masked: {
             xtype: 'loadmask'
-            /*message: 'My message'*/
         },
         itemTpl: [
             '<span><img src="{clientLogo}" alt="{title}" /></span>',

@@ -7,7 +7,10 @@ Ext.define('Q4App.profile.Tablet', {
             'Home',
             'Overview'
         ],
-        views: ['Main', 'Overview']
+        views: [
+            'Main',
+            'Overview'
+        ]
     },
 
     isActive: function() {
